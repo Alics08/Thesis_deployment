@@ -1,0 +1,508 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["Hi ALiCS", "hello", "hey", "howdy","hi"],
+      "responses": ["Hello! I am ALiCS, I'm  here to assist you with legal case recommendations. How can I help you today? The Revised Penal Code (RPC) is the basis for criminal offenses in the Philippines. Feel free to ask about specific cases!",
+                    "Hi! there my name is ALiCS your legal assistance Chatbot. What can I do for you? Remember, the Revised Penal Code (RPC) governs criminal law in the Philippines.",
+                    "Hey! I am ALiCS, I'm here to provide legal guidance. How can I assist you? Keep in mind that the Revised Penal Code (RPC) contains laws related to criminal offenses.",
+                    "Howdy! I am ALiCS, I'm your legal assistant. What legal matters can I help you with today? If you have any questions about the Revised Penal Code (RPC), feel free to ask!"]
+    },
+    {
+      "tag": "ALiCS_info",
+      "patterns": [ "please tell me about you ALiCS"," does ALiCS stand for","Describe yourself ALiCS"," you work ALiCS"," services do you offerF ALiCS","please tell me about you"],        
+      "responses": ["I am ALiCS, which stands for Assistance for Legal Information and Crime Victims Support. I'm here to provide you with comprehensive legal information and support services, especially if you've been affected by crime. I use advanced Artificial Neural Networks (ANN) to understand your questions and give you accurate and relevant legal guidance. I was developed by Biliran Province State University (BiPSU) Computer Science students as part of their thesis project.",
+                   "Sure! I'm ALiCS, short for Assistance for Legal Information and Crime Victims Support. I'm designed to assist you with expert legal information and support, particularly if you're dealing with crime-related issues. Using Artificial Neural Networks (ANN), I analyze your queries to provide clear and reliable advice. My development was a project undertaken by Computer Science students at Biliran Province State University (BiPSU) as part of their thesis work.",
+                   "Sure! I'm ALiCS, stands for Assistance for Legal Information and Crime Victims Support. I offer a wide range of services, including legal education, consultation, and support for crime victims. My advanced Artificial Neural Networks (ANN) help me provide you with accurate legal guidance and information tailored to your needs. I was created by Computer Science students at Biliran Province State University (BiPSU) as part of their thesis project.",
+                   "I am ALiCS, which stands for Assistance for Legal Information and Crime Victims Support. I'm here to be your ally in facing legal challenges, especially if you've been a victim of crime. I provide detailed explanations of legal terms, guide you through legal procedures, and help you understand your rights and options. My responses are powered by advanced Artificial Neural Networks (ANN) to ensure accuracy and relevance. I was developed by the Computer Science students of Biliran Province State University (BiPSU) as part of their thesis.",
+                   "I am ALiCS, short for Assistance for Legal Information and Crime Victims Support.  My purpose is to offer accessible, reliable, and expert legal information and support to users, focusing on aiding crime victims. I use advanced AI technologies like Artificial Neural Networks (ANN) to interpret and respond to a wide range of legal queries, providing you with timely and relevant information. I was developed by the Computer Science students of Biliran Province State University (BiPSU) as a thesis project to provide meaningful assistance to the community.",
+                   "Sure! I'm ALiCS, short for Assistance for Legal Information and Crime Victims Support.  Using me is easy. Just type in your question or the incident, and I'll provide you with information and guidance based on your input. I'm available to anyone with internet access, making legal support easily reachable for those who need it most. I leverage advanced Artificial Neural Networks (ANN) to offer personalized responses and help you navigate legal issues effectively. My creation was a collaborative thesis project by Computer Science students at Biliran Province State University (BiPSU)."
+                  ]
+    },
+    {
+      "tag": "piracy",
+      "patterns": ["piracy", "pirate", "sea robbery", "maritime crime", "sea","ship","veseal","fishing boat","boat"],
+      "responses": ["Piracy refers to the act of committing robbery or other violent acts at sea. In the Philippines, piracy is a serious offense punishable under Article 122 of the Revised Penal Code. This article defines piracy and prescribes severe penalties, including reclusion perpetua or death, depending on the gravity of the offense.",
+                    "Piracy involves criminal acts such as robbery, violence, or hijacking committed on the high seas. In the Philippines, piracy is punishable under Article 122 of the Revised Penal Code. This article outlines the elements of piracy and provides for harsh penalties, such as reclusion perpetua or death, to deter maritime crimes and protect maritime security."]
+    },
+    {
+      "tag": "theft",
+      "patterns": ["theft","stole my wallet", "money stolen", "theft case", "property theft", "get","stole", "steal","take","snatched my phone", "stealing","taken","snatched my bag","snatched my wallet","snatched","snatcher","someone bump","gone"],
+      "responses": ["It sounds like a case of theft. Theft is defined as the taking of someone's property without consent with the intent to permanently deprive them of it. Under Article 308 of the Revised Penal Code (RPC), theft is punishable by imprisonment ranging from 6 months 1 day to 20 years, depending on the value of the stolen property.",
+                    "Based on the scenario, it seems like theft. Theft, as defined in Article 308 of the Revised Penal Code (RPC), occurs when someone unlawfully takes another person's property with the intention of depriving them of it. The penalty for theft may range from 6 months 1 day to 20 years imprisonment, depending on the circumstances."]
+    },
+    {
+      "tag": "robbery",
+      "patterns": ["robbery", "armed robbery", "theft with violence", "hold-up", "mugging", "money with violence", "money with force","pointing a fire arm","forcedly get","armed","force","forced", "forcedly take","grabbed","brandished a knife","a knife","knife","brandished a gun","pointing gun","yanked it harder","it harder","yanked","suddenly grabbed","gun","robbed"],
+      "responses": ["Robbery, is the unlawful taking of property from a person or a place by force, violence, or intimidation. In the Philippines, robbery is punishable under Article 294 of the Revised Penal Code. This article defines the offense of robbery and prescribes penalties, which may include imprisonment ranging from prision correccional to reclusion perpetua, depending on the circumstances and aggravating factors involved.",
+                    "Roberry, preventing robbery requires a combination of law enforcement efforts, community engagement, and crime prevention strategies. Citizens are encouraged to report suspicious activities, implement security measures, and support initiatives aimed at addressing the root causes of crime and improving socio-economic conditions in communities,  robbery is punishable under Article 294 of the Revised Penal Code. This article defines the offense of robbery and prescribes penalties, which may include imprisonment ranging from prision correccional to reclusion perpetua, depending on the circumstances and aggravating factors involved."]
+    },
+    {
+      "tag": "bigamy",
+      "patterns": ["bigamy","multiple marriages", "bigamy case", "illegal marriage", "marrying while still married", "many wives"," marry other woman", "mary other man","marry"],
+      "responses": ["Bigamy is a crime under Article 349 of the Revised Penal Code (RPC). It occurs when someone enters into a second marriage while still legally married to another person. The penalty for bigamy includes imprisonment ranging from 6 months 1 day to 6 years.",
+                    "Based on the scenario, it appears to be a case of bigamy. Bigamy, as defined in Article 349 of the Revised Penal Code (RPC), involves marrying another person while still being legally married to someone else. The penalty for bigamy may range from 6 months 1 day to 6 years imprisonment."]
+    },
+    {
+      "tag": "homicide",
+      "patterns": [ "homicide","killed someone", "accidentally killed", "with out intention to kill", "he did mean to do it","not intention","accidentally"],
+      "responses": ["It sounds like a homicide case. Homicide is the killing of one person by another, and it is punishable under Article 249 of the Revised Penal Code (RPC). The penalties vary depending on the circumstances, such as intent and provocation. The penalty for homicide ranges from imprisonment ranging from 6 to 12 years.",
+                    "Based on the information provided, it appears to be a homicide case. Homicide, as defined in Article 249 of the Revised Penal Code (RPC), involves the unlawful killing of another person. The penalty for homicide may range from 6 to 12 years imprisonment, depending on the circumstances."]
+    },
+    {
+      "tag": "frustrated_homicide",
+      "patterns": ["frustrated homicide", "attempted homicide", "unsuccessful murder", "unsuccessfully","not successful", "still alive", "unsuccessful", "attempts","survives", "survive","did not die"],
+      "responses": ["Frustrated homicide refers to the act of attempting to kill another person but failing to do so, either due to the victim surviving the attack or the perpetrator's failure to complete the crime. It is a serious offense under criminal law and is punishable by law. In the Philippines, the legal basis for prosecuting frustrated homicide can be found under Article 6 and Article 50 of the Revised Penal Code. Article 6 establishes the distinctions between consummated, frustrated, and attempted felonies, while Article 50 provides guidelines for determining the penalty for frustrated or attempted felonies. Penalties for frustrated homicide may include imprisonment and fines, with the severity of the punishment determined by the circumstances of the crime and the laws of the jurisdiction.",
+                    "Frustrated homicide, in cases of frustrated homicide, the perpetrator intentionally tries to cause the death of another person but is unsuccessful in completing the act. This offense is punishable by law, as it involves a deliberate attempt to take someone's life. The legal basis for prosecuting frustrated homicide in the Philippines can be found under Article 6 and Article 50 of the Revised Penal Code. Article 6 establishes the stages of felonies, including consummated, frustrated, and attempted, while Article 50 provides guidelines for determining penalties for frustrated or attempted felonies. Penalties for frustrated homicide may include imprisonment and fines, depending on the severity of the offense and the laws of the jurisdiction."]
+    },
+    {
+      "tag": "murder",
+      "patterns": ["murder", "unlawful killing", "intentional killing","intentionally", "intentional", "not capable to protect","can't defend", "at the back", "my father brutally killed my", "brutally killed","to death","killed","days old","die immediately","immediately died","dead on the spot","attacked","attacking","attack"],
+      "responses": ["Murder is the unlawful killing of another person with malice aforethought. It is considered one of the most serious criminal offenses and is punishable by law. In the Philippines, the legal basis for prosecuting murder can be found under Article 248 of the Revised Penal Code. This article defines murder and prescribes the penalties for this offense, which may include reclusion perpetua or life imprisonment.",
+                    "Murder is the intentional and unlawful killing of another person, characterized by the presence of malice aforethought. It is a grave offense punishable under criminal law. In the Philippines, the legal basis for prosecuting murder is established under Article 248 of the Revised Penal Code. This article outlines the elements of murder and provides for severe penalties, such as reclusion perpetua or life imprisonment, depending on the circumstances of the crime."]
+    },
+    {
+      "tag": "physical_injury",
+      "patterns": ["physical_injury","assault", "physical harm", "injured someone", "physical altercation", "wounded", "laceration", "stabbed", "stab", "deeply wounded", "woul not heal for","10 days"],
+      "responses": ["This seems like a case of physical injury. Physical injury is punishable under Article 265 of the Revised Penal Code (RPC). The severity of the penalty depends on the extent of the injury inflicted. The penalty for physical injury ranges from imprisonment ranging from 6 months 1 day to 6 years.",
+                    "Based on the scenario, it appears to be a case of physical injury. Physical injury, as defined in Article 265 of the Revised Penal Code (RPC), involves causing harm or injury to another person. The penalty for physical injury may range from 6 months 1 day to 6 years imprisonment, depending on the severity."]
+    },
+    {
+      "tag": "serious_physical_injury",
+      "patterns": [ "serious injury", "grave harm","25 days","more than","65 days", "severe physical harm","life-threatening injury","permanent injury","caused serious harm to someone","hurt someone badly","inflicted serious wounds"],
+      "responses": ["It appears to be a case of serious physical injury. Serious physical injuries are defined under Article 263 of the Revised Penal Code in the Philippines. The penalties vary based on the extent of the injuries, with prision mayor in its minimum to medium periods (6 years and 1 day to 12 years) when the injury is permanent or when the victim is incapacitated for work for more than 90 days.",
+                    "This seems to involve serious physical injury. Article 263 of the Revised Penal Code defines this crime and prescribes penalties, which include prision mayor if the victim suffers permanent disability or disfigurement, or is unable to work for a prolonged period. The penalty can range from 6 years and 1 day to 12 years, depending on the gravity of the injury."]
+    },
+    {
+      "tag": "slight_physical_injury",
+      "patterns": ["slight physical injury", "minor injury", "harm without serious consequence", "small", "scracth", "punched", "laceration", "kicked", "kick", "slapped", "slap","Someone hurt me ","not too"],
+      "responses": ["Slight physical injury refers to harm caused to another person that does not result in serious consequences or permanent damage. It is punishable under Article 266 of the Revised Penal Code. The penalty for slight physical injury depends on various factors such as the severity of the injury and the relationship between the offender and the victim.",
+                    "Under the Revised Penal Code, slight physical injury is defined as harm that causes physical pain or discomfort but does not result in serious injury or permanent disability. Offenders may face penalties ranging from a fine to imprisonment depending on the circumstances of the case."]
+    },
+    {
+      "tag": "arbitrary_detention",
+      "patterns": ["arbitrary_detention","unlawful arrest", "detained without cause", "arbitrary detention","put in jail","without a case"],
+      "responses": ["Arbitrary detention, also known as illegal or unlawful detention, is a violation of human rights and is punishable under Article 124 of the Revised Penal Code. It occurs when someone is detained without proper legal authority or justification. Penalty of arresto mayor, in its maximum period to presion correctional in its minimum period, if the detentoin has not exceeded three days",
+                    "Based on the scenario provided, it seems like a case of arbitrary detention. Penalty of arresto mayor, in its maximum period to presion correctional in its minimum period, if the detentoin has not exceeded three days. Arbitrary detention is a serious offense punishable by law, as outlined in Article 124 of the Revised Penal Code."]
+    },
+    {
+      "tag": "illegal_detention",
+      "patterns": ["illegal detention","civillian","not a public servant", "stranger", "unknown person", "private ", "private person","locked in the room","tied his hands and feet","tied","tied me"],
+      "responses": ["Illegal detention, also known as unlawful arrest, is a serious violation of human rights and is punishable under the law. It occurs when someone is held in custody without proper legal authority or justification. In the Philippines, the legal basis for this offense is Article 124 of the Revised Penal Code. The penalties for illegal detention vary depending on the circumstances but can include imprisonment and fines.",
+                    "In cases of illegal detention, individuals are unlawfully deprived of their freedom without legitimate cause or legal basis. This is a violation of human rights and is punishable by law. Article 124 of the Revised Penal Code provides the legal basis for prosecuting such offenses. Penalties for illegal detention may include imprisonment and fines, depending on the severity of the offense."]
+    },
+    {
+      "tag": "treason",
+      "patterns": ["treason", "treasonous", "traitor", "betrayal of country","giving aid to other country"],
+      "responses": ["Treason is the crime of betraying one's country by acting against its interests or aiding its enemies during times of war or conflict. In the Philippines, treason is punishable under Article 114 of the Revised Penal Code. This article defines treason and prescribes severe penalties, including reclusion perpetua or death, depending on the gravity of the offense.",
+                    "Treason involves betraying one's allegiance to their country by committing acts against its interests or supporting its enemies. In the Philippines, treason is punishable under Article 114 of the Revised Penal Code. This article outlines the elements of treason and provides for harsh penalties, such as reclusion perpetua or death, to deter acts of disloyalty and protect national security."]
+    },
+    {
+      "tag": "espionage",
+      "patterns": ["espionage", "spy", "intelligence gathering", "foreign espionage"],
+      "responses": ["Espionage involves the act of clandestinely obtaining sensitive information or state secrets of a foreign government or organization with the intent to provide it to one's own government or another entity. In the Philippines, espionage is punishable under Article 117 of the Revised Penal Code. This article defines espionage and prescribes severe penalties, including reclusion perpetua or life imprisonment, depending on the gravity of the offense.",
+                    "Espionage is the covert collection of classified or confidential information for the benefit of another entity or government. In the Philippines, espionage is punishable under Article 117 of the Revised Penal Code. This article outlines the elements of espionage and provides for harsh penalties, such as reclusion perpetua or life imprisonment, to deter acts of espionage and protect national security."]
+    },
+    {
+      "tag": "estafa",
+      "patterns": ["estafa", "swindling", "big amount of money", "a million", "million", "a billion", "billion","pyramid schemes","ponzi schemes","big amount"],
+      "responses": ["Estafa is a criminal offense in the Philippines that involves defrauding someone through deceit or misrepresentation, leading to the loss of money, property, or any other valuable consideration. Estafa is punishable under Article 315 of the Revised Penal Code. This article defines estafa and prescribes penalties, which vary depending on the amount involved and the circumstances of the offense.",
+                    "Estafa refers to the act of defrauding someone by deceiving them into giving up money, property, or other valuable items. In the Philippines, estafa is punishable under Article 315 of the Revised Penal Code. This article outlines the elements of estafa and provides for penalties, such as imprisonment and fines, based on the amount defrauded and other factors."]
+    },
+    {
+      "tag": "rebellion_insurrection",
+      "patterns": ["rebellion", "insurrection", "armed uprising", "rebel group", "armed rebellion", "insurgency", "NPA","new peoples army"],
+      "responses": ["Rebellion or insurrection involves an organized armed uprising against the government or established authority. In the Philippines, rebellion and insurrection are punishable under Article 134 of the Revised Penal Code. This article defines rebellion and insurrection and prescribes severe penalties, including reclusion perpetua or death, depending on the gravity of the offense.",
+                    "Rebellion or insurrection refers to the act of taking up arms against the government or authority in an attempt to overthrow or undermine its power. In the Philippines, rebellion and insurrection are punishable under Article 134 of the Revised Penal Code. This article outlines the elements of rebellion and insurrection and provides for harsh penalties, such as reclusion perpetua or death, to deter acts of armed rebellion and protect national security."]
+    },
+    {
+      "tag": "sedition",
+      "patterns": ["sedition", "seditious act", "inciting rebellion", "anti-government activities"],
+      "responses": ["Sedition involves acts intended to incite rebellion or resistance against the government or its lawful authority. In the Philippines, sedition is punishable under Article 139 of the Revised Penal Code. This article defines sedition and prescribes penalties, which may include imprisonment and fines, depending on the gravity of the offense.",
+                    "Sedition refers to actions aimed at stirring up discontent or resistance against the government or its officials. In the Philippines, sedition is punishable under Article 139 of the Revised Penal Code. This article outlines the elements of sedition and provides for penalties, such as imprisonment and fines, to deter anti-government activities and maintain public order."]
+    },
+    {
+      "tag": "illegal_assemblies",
+      "patterns": ["illegal assemblies", "unlawful gatherings", "unauthorized protests","illegal rally","rally"],
+      "responses": ["Illegal assemblies refer to gatherings or protests that occur without proper authorization or violate regulations governing public gatherings. In the Philippines, illegal assemblies may be addressed under various laws and regulations, including the Public Assembly Act (RA 7160) and other local ordinances.",
+                    "Illegal assemblies involve gatherings that contravene laws or regulations governing public gatherings. In the Philippines, illegal assemblies may be subject to penalties under the Public Assembly Act (RA 7160) and other applicable laws and ordinances. These penalties may include fines, imprisonment, or other sanctions, depending on the severity of the violation and the circumstances of the assembly."]
+    },
+    {
+      "tag": "direct_assaults",
+      "patterns": ["direct assault", "physical attack on arresting officer", "assault on authority", "resisting arrest"," physical attack on Police Officer", "police officer"],
+      "responses": ["Direct assault refers to the act of physically attacking, resisting, or obstructing a person in authority or their agents while they are performing their official duties. In the Philippines, direct assault is punishable under Article 148 of the Revised Penal Code. This article defines direct assault and prescribes penalties, which may include imprisonment and fines, depending on the gravity of the offense.",
+                    "Direct assault involves assaulting, resisting, or impeding a person in authority or their agents in the performance of their official duties. In the Philippines, direct assault is punishable under Article 148 of the Revised Penal Code. This article outlines the elements of direct assault and provides for penalties, such as imprisonment and fines, to deter attacks on authority and maintain public order."]
+    },
+    {
+      "tag": "indirect_assaults",
+      "patterns": ["indirect assaults", "threats against authority", "intimidation of public officer", "verbal attack on person in authority","officer"],
+      "responses": ["Indirect assaults involve threatening, intimidating, or verbally attacking a person in authority, such as a law enforcement officer, which impedes or obstructs them from performing their duties. In the Philippines, indirect assaults may be punishable under various laws, including Article 149 (Direct Assault) and Article 151 (Resistance and Disobedience to a Person in Authority) of the Revised Penal Code.",
+                    "Indirect assaults refer to acts of intimidation, threats, or verbal aggression directed at persons in authority, aimed at undermining their authority or impeding them from carrying out their official duties. In the Philippines, indirect assaults may be subject to penalties under Article 149 (Direct Assault) and Article 151 (Resistance and Disobedience to a Person in Authority) of the Revised Penal Code, as well as other relevant laws and ordinances."]
+    },
+    {
+      "tag": "tumults",
+      "patterns": ["tumults", "public disorder", "riotous behavior", "violent disturbances"],
+      "responses": ["Tumults refer to violent or disorderly disturbances involving a group of people in a public place. In the Philippines, tumults may be addressed under various laws and ordinances, including provisions related to public order and safety. Depending on the severity of the tumult and the specific circumstances, penalties may be imposed under applicable laws such as the Revised Penal Code and local ordinances.",
+                    "Tumults involve chaotic or disorderly behavior by a group of individuals, leading to disturbances or disruptions in public spaces. In the Philippines, tumults may be subject to penalties under laws and ordinances aimed at maintaining public order and safety, deterring riotous behavior, and protecting the welfare of the community. Penalties for tumults can vary depending on the gravity of the disturbance and may include fines, imprisonment, or other sanctions as provided by law."]
+    },
+    {
+      "tag": "delivery_of_prisoners",
+      "patterns": ["delivery of prisoners from jails", "rescue of prisoners", "jailbreak", "aiding escape of prisoners","helping to scape"],
+      "responses": ["The delivery of prisoners from jails refers to the act of unlawfully freeing or aiding in the escape of detainees from lawful custody. In the Philippines, such actions may be punishable under Article 156 of the Revised Penal Code. This article defines the offense of evasion of service of sentence and prescribes penalties, which may include imprisonment and fines, depending on the circumstances.",
+                    "The delivery of prisoners from jails involves facilitating the escape of detainees from lawful confinement. In the Philippines, this offense may be subject to penalties under Article 156 of the Revised Penal Code. Penalties for the delivery of prisoners from jails can vary depending on factors such as the method of escape, the number of prisoners involved, and the degree of complicity in the offense."]
+    },
+    {
+      "tag": "evasion_of_sentence",
+      "patterns": ["evasion of sentence", "avoiding imprisonment", "fleeing from custody", "failure to serve sentence"],
+      "responses": ["Evasion of sentence refers to the act of avoiding or escaping imprisonment lawfully imposed by the courts. In the Philippines, evasion of sentence is punishable under Article 157 of the Revised Penal Code. This article defines the offense of evasion of service of sentence and prescribes penalties, which may include imprisonment and fines, depending on the circumstances.",
+                    "Evasion of sentence occurs when an individual unlawfully avoids serving a sentence of imprisonment imposed by a court. In the Philippines, evasion of sentence is a criminal offense under Article 157 of the Revised Penal Code. Penalties for evasion of sentence can vary depending on factors such as the duration of evasion, the method of escape, and the seriousness of the underlying offense."]
+    },    
+    {
+      "tag": "forged_signature_counterfeit_seal",
+      "patterns": ["forged signature", "counterfeit seal", "counterfeit stamp", "use of fake signature", "forged document","uses my signature","paper","signature","documents","document"],
+      "responses": ["The use of a forged signature, counterfeit seal, or stamp involves the unauthorized and fraudulent reproduction or imitation of signatures, seals, or stamps for deceptive purposes. In the Philippines, such actions may be punishable under various laws, including Article 168 of the Revised Penal Code. This article defines the offense of illegal use of false certificates, and prescribes penalties, which may include imprisonment and fines, depending on the gravity of the offense.",
+                    "Using a forged signature, counterfeit seal, or stamp constitutes a criminal offense aimed at deceiving or defrauding others through fraudulent documents. In the Philippines, this offense may be subject to penalties under Article 168 of the Revised Penal Code. Penalties for using forged signatures, counterfeit seals, or stamps can vary depending on factors such as the intent of the perpetrator and the extent of harm caused to victims."]
+    },
+    {
+      "tag": "falsification_by_public_officer",
+      "patterns": ["falsification by public officer", "falsification by employee", "notary falsification", "ecclesiastic minister falsification", "forging public documents"],
+      "responses": ["Falsification by a public officer, employee, notary, or ecclesiastic minister involves the fraudulent alteration, fabrication, or tampering of public documents or records. In the Philippines, such actions may be punishable under Article 171 of the Revised Penal Code. This article defines the offense of falsification of public documents and prescribes penalties, which may include imprisonment and fines, depending on the nature and gravity of the falsification.",
+                    "Falsification by a public officer, employee, notary, or ecclesiastic minister is a serious offense aimed at deceiving the public or authorities through fraudulent documents. In the Philippines, this offense may be subject to penalties under Article 171 of the Revised Penal Code. Penalties for falsification of public documents can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of falsification involved."]
+    },
+    {
+      "tag": "falsification_by_private_individual",
+      "patterns": ["falsification by private individual", "forging private documents", "use of falsified documents", "fabricated documents", "counterfeit documents"],
+      "responses": ["Falsification by a private individual involves the fraudulent alteration, fabrication, or tampering of private documents or records. In the Philippines, such actions may be punishable under Article 172 of the Revised Penal Code. This article defines the offense of falsification of private documents and prescribes penalties, which may include imprisonment and fines, depending on the nature and gravity of the falsification.",
+                    "The use of falsified documents involves presenting or utilizing documents known to be falsified or fabricated for deceptive purposes. In the Philippines, this offense may be subject to penalties under various laws, including Article 172 of the Revised Penal Code. Penalties for the use of falsified documents can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of falsification involved."]
+    },
+    {
+      "tag": "false_certificates",
+      "patterns": ["false medical certificates", "false certificates of merits", "false certificates of service", "fabricated certificates", "fraudulent documents"],
+      "responses": ["The issuance of false medical certificates, certificates of merits, or certificates of service involves the creation or distribution of fraudulent documents for deceptive purposes. In the Philippines, such actions may be punishable under various laws, including Article 172 of the Revised Penal Code. This article defines the offense of falsification of private documents and prescribes penalties, which may include imprisonment and fines, depending on the nature and gravity of the falsification.",
+                    "The use of false medical certificates, certificates of merits, or certificates of service is a serious offense aimed at deceiving authorities or organizations through fraudulent documents. In the Philippines, this offense may be subject to penalties under Article 172 of the Revised Penal Code. Penalties for the use of false certificates can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of falsification involved."]
+    },
+    {
+      "tag": "using_false_certificates",
+      "patterns": ["using false certificates", "presenting fraudulent documents", "misrepresentation with fake certificates", "submission of falsified papers","certificates"],
+      "responses": ["Using false certificates involves presenting or submitting documents known to be fraudulent or fabricated for deceptive purposes. In the Philippines, such actions may be punishable under various laws, including Article 172 of the Revised Penal Code. This article defines the offense of falsification of private documents and prescribes penalties, which may include imprisonment and fines, depending on the nature and gravity of the falsification.",
+                    "The use of false certificates is a serious offense aimed at deceiving authorities or organizations through fraudulent documents. In the Philippines, this offense may be subject to penalties under Article 172 of the Revised Penal Code. Penalties for the use of false certificates can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of falsification involved."]
+    },
+    {
+      "tag": "fictitious_name_concealing_true_name",
+      "patterns": ["using fictitious name", "concealing true name", "alias", "impersonation", "false identity","somebody's name","somone's name","name","my name"],
+      "responses": ["Using a fictitious name or concealing one's true name involves presenting oneself or identifying oneself under a name other than their real one for deceptive purposes. In the Philippines, such actions may be punishable under Article 178 of the Revised Penal Code. This article defines the offense of using fictitious names and concealing true names and prescribes penalties, which may include imprisonment and fines, depending on the circumstances.",
+                    "The use of a fictitious name or concealing one's true name is a serious offense aimed at deceiving authorities or individuals through false identity. In the Philippines, this offense may be subject to penalties under Article 178 of the Revised Penal Code. Penalties for using fictitious names or concealing true names can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of deception involved."]
+    },
+    {
+      "tag": "illegal_use_of_uniforms_or_insignia",
+      "patterns": ["illegal use of uniforms", "illegal use of insignia", "improper wearing of uniform", "unauthorized use of military uniform", "misuse of official insignia"],
+      "responses": ["The illegal use of uniforms or insignia involves wearing or displaying uniforms or insignia without proper authority or permission. In the Philippines, such actions may be punishable under various laws and regulations, including military and police regulations, as well as Article 179 of the Revised Penal Code. This article defines the offense of illegal use of uniforms or insignia and prescribes penalties, which may include imprisonment and fines, depending on the nature and gravity of the violation.",
+                    "Using uniforms or insignia improperly or without authorization is a serious offense that undermines the authority and integrity of uniformed personnel and organizations. In the Philippines, this offense may be subject to penalties under military and police regulations, as well as Article 179 of the Revised Penal Code. Penalties for the illegal use of uniforms or insignia can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of deception involved."]
+    },
+    {
+      "tag": "false_testimony_against_defendant",
+      "patterns": ["false testimony against defendant", "perjured testimony", "lying under oath", "fabricated evidence against accused"],
+      "responses": ["Providing false testimony against a defendant involves intentionally giving untrue statements or fabricating evidence during legal proceedings. In the Philippines, such actions may be punishable under Article 183 of the Revised Penal Code. This article defines the offense of perjury and prescribes penalties, which may include imprisonment and fines, depending on the nature and gravity of the false testimony.",
+                    "Offering false testimony against a defendant is a serious offense that undermines the integrity of the legal system and jeopardizes the fairness of trials. In the Philippines, this offense may be subject to penalties under Article 183 of the Revised Penal Code. Penalties for perjury, or providing false testimony, can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of deception involved."]
+    },
+    {
+      "tag": "false_testimony_favorable_to_defendants",
+      "patterns": ["false testimony favorable to defendants", "perjured testimony in favor of accused", "lying under oath to help defendant", "fabricated evidence to aid defendant"],
+      "responses": ["Providing false testimony favorable to defendants involves intentionally giving untrue statements or fabricating evidence during legal proceedings to support the accused. In the Philippines, such actions may still be punishable under Article 183 of the Revised Penal Code, which defines the offense of perjury. Regardless of the intent, perjury is a serious offense and can lead to imprisonment and fines, depending on the nature and gravity of the false testimony.",
+                    "Offering false testimony favorable to defendants is a serious offense that undermines the integrity of the legal system and may unjustly affect the outcome of trials. In the Philippines, this offense may still be subject to penalties under Article 183 of the Revised Penal Code, which addresses perjury. Penalties for perjury, including providing false testimony, can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of deception involved."]
+    },
+    {
+      "tag": "false_testimony_civil_cases",
+      "patterns": ["false testimony in civil cases", "perjured testimony in civil litigation", "lying under oath in civil proceedings", "fabricated evidence in civil court"],
+      "responses": ["Providing false testimony in civil cases involves intentionally giving untrue statements or fabricating evidence during legal proceedings related to civil matters. In the Philippines, such actions may be punishable under Article 183 of the Revised Penal Code. This article defines the offense of perjury and prescribes penalties, which may include imprisonment and fines, depending on the nature and gravity of the false testimony.",
+                    "Offering false testimony in civil cases is a serious offense that undermines the integrity of the legal process and may unjustly affect the outcome of proceedings. In the Philippines, this offense may be subject to penalties under Article 183 of the Revised Penal Code, which addresses perjury. Penalties for perjury, including providing false testimony, can vary depending on factors such as the intent of the perpetrator, the extent of harm caused, and the degree of deception involved."]
+    },
+    {
+      "tag": "machinations_in_public_auctions",
+      "patterns": ["machinations in public auctions", "manipulation of auction proceedings", "bid rigging in public sales", "collusion in auction bidding"],
+      "responses": ["Machinations in public auctions refer to fraudulent or deceptive practices aimed at manipulating auction proceedings for personal gain or to disadvantage other participants. In the Philippines, such actions may be punishable under Article 182 of the Revised Penal Code. This article defines the offense of false bidding or collusion and prescribes penalties, which may include imprisonment and fines, depending on the nature and gravity of the machinations.",
+                    "Engaging in machinations in public auctions is a serious offense that undermines the fairness and integrity of the auction process. In the Philippines, this offense may be subject to penalties under Article 182 of the Revised Penal Code, which addresses false bidding or collusion. Penalties for machinations in public auctions can vary depending on factors such as the extent of manipulation, the amount of financial harm caused, and the degree of deceit involved."]
+    },
+    {
+      "tag": "grave_scandal",
+      "patterns": ["grave scandal", "indecent acts in public", "public indecency", "lewd behavior in public", "obscene acts in public"],
+      "responses": ["Grave scandal refers to the commission of acts that are offensive to decency or morality and are publicly visible or conducted in places accessible to the public. In the Philippines, such actions may be punishable under Article 200 of the Revised Penal Code. This article defines the offense of grave scandal and prescribes penalties, which may include imprisonment or fines, depending on the nature and gravity of the scandal.",
+                    "Engaging in grave scandal involves behavior that breaches the standards of decency expected in public spaces, potentially causing public outrage or offense. In the Philippines, this offense may be subject to penalties under Article 200 of the Revised Penal Code. Penalties for grave scandal can vary depending on factors such as the extent of public exposure, the impact on public sensibilities, and the degree of indecency involved."]
+    },
+    {
+      "tag": "vagrants_and_prostitutes",
+      "patterns": ["vagrants", "prostitutes", "loitering", "soliciting sex", "engaging in prostitution", "sex workers", "prostitution","walker","call boy"],
+      "responses": ["Vagrants are individuals who wander or loiter in public places without visible means of support or livelihood. In the Philippines, vagrancy is punishable under Article 202 of the Revised Penal Code. This article defines the offense of vagrancy and prescribes penalties, which may include imprisonment or fines.",
+                    "Prostitutes are individuals who engage in sexual activity or offer sexual services in exchange for money or other forms of compensation. In the Philippines, engaging in prostitution or soliciting sex is punishable under various laws and ordinances. In the Philippines, vagrancy is punishable under Article 202 of the Revised Penal Code. Penalties may vary depending on the specific jurisdiction and applicable regulations.",
+                    "Both vagrancy and prostitution are considered social issues that may involve vulnerable individuals. In the Philippines, vagrancy is punishable under Article 202 of the Revised Penal Code. While law enforcement agencies may impose penalties for these offenses, efforts to address the root causes, such as poverty, unemployment, and lack of social support, are also important for effective intervention and prevention."]
+    },
+    {
+      "tag": "infanticide",
+      "patterns": ["infanticide", "killing newborn", "murder of a newborn", "child homicide","killed newborn"," hours old baby","baby", "infant","1 day old","2 days old","less than 3 days","less than 72 hours","new born"],
+      "responses": ["Infanticide refers to the killing of a newborn child that is less than 3 day or less than 72 hours, which occurs due to the effects of childbirth or the mental disturbance resulting from the consequences of childbirth. In the Philippines, infanticide is punishable under Article 255 of the Revised Penal Code. This article defines the offense of infanticide and prescribes penalties, which may include imprisonment, depending on the circumstances.",
+                   "Infanticide refers to the killing of a newborn child that is less than 3 day or less than 72 hours, it is a tragic and complex issue that often involves maternal mental health issues and socio-economic factors. In the Philippines, laws and regulations provide for legal and medical interventions to prevent infanticide and support maternal and infant health. Additionally, efforts to address the underlying causes, such as access to reproductive healthcare, mental health support, and social welfare programs, are crucial for preventing such tragedies, infanticide is punishable under Article 255 of the Revised Penal Code. This article defines the offense of infanticide and prescribes penalties, which may include imprisonment, depending on the circumstances."]
+    },
+    {
+      "tag": "parricide",
+      "patterns": ["parricide", "killing parent", "murder of a parent", "parental homicide", " killed my father", "killed my mother","legally adopted","killed his son","killed his daughter","killed her son","killed her daughter"],
+      "responses": ["Parricide is the act of killing one's parent or child, which is considered one of the most serious crimes in Philippine law. It is punishable under Article 246 of the Revised Penal Code. This article defines the offense of parricide and prescribes severe penalties, which may include reclusion perpetua or life imprisonment, depending on the circumstances.",
+                    "Parricide is a grave offense that reflects deep familial conflicts or psychological disturbances. It is punishable under Article 246 of the Revised Penal Code. It often has significant social and psychological implications for the perpetrator and the affected family members. Legal and social support services are crucial for addressing the complexities surrounding cases of parricide and promoting healing and rehabilitation."]
+    },
+    {
+      "tag": "statutory_rape",
+      "patterns": ["statutory rape", "sexual intercourse with minors", "underage sex", "unlawful carnal knowledge with minors", " 10 11 12 13 14 15 16 17 18 years old", "minor", "below"],
+      "responses": ["Statutory rape refers to sexual intercourse or sexual activity with a minor who is below the legal age of consent. In the Philippines, statutory rape is punishable under various laws, including Article 266-A of the Revised Penal Code and the Anti-Rape Law of 1997. Penalties for statutory rape can vary depending on factors such as the age of the victim and the relationship between the perpetrator and the victim. The penalties for statutory rape may include imprisonment ranging from reclusion perpetua to prision correccional depending on the circumstances of the case.",
+                    "Statutory rape laws aim to protect minors from sexual exploitation and abuse by ensuring that individuals who engage in sexual activity with minors face legal consequences. Legal and social support services are essential for survivors of statutory rape to ensure their well-being and access to justice, Article 266-A of the Revised Penal Code and the Anti-Rape Law of 1997. Penalties for statutory rape can vary depending on factors such as the age of the victim and the relationship between the perpetrator and the victim. The penalties for statutory rape may include imprisonment ranging from reclusion perpetua to prision correccional depending on the circumstances of the case."] 
+    },
+    {
+      "tag": "marital_rape",
+      "patterns": ["marital rape", "spousal rape", "sexual assault in marriage", "non-consensual sex within marriage", "wife","husband","wife froced me","husband forced me"],
+      "responses": ["Marital rape refers to the act of sexual intercourse or sexual activity without the consent of one's spouse. While marital rape is recognized as a form of sexual violence in many countries, including the Philippines, it may not have specific legal provisions or penalties under existing laws. However, under the Anti-Violence Against Women and Their Children Act of 2004 (Republic Act No. 9262), sexual violence, including marital rape, is considered a form of domestic violence and is subject to legal sanctions.",
+                    "Marital rape, marital rape require comprehensive legal reforms, public awareness campaigns, and advocacy for gender equality and women's rights. By recognizing and addressing the issue of marital rape, societies can work towards ending all forms of violence against women and promoting healthy, respectful relationships within marriages. Act of 2004 (Republic Act No. 9262), sexual violence, including marital rape, is considered a form of domestic violence and is subject to legal sanctions."]
+    },
+    {
+      "tag": "fraud",
+      "patterns": ["scammed", "deception", "fraudulent transaction", "embezzlement", "lies", "did not tell the truth","lying", "lier","scammer","scam","lied","telling lies","fake","deceiving","lie"],
+      "responses": ["It sounds like a case of fraud. Fraud is punishable under various articles of the Revised Penal Code (RPC), depending on the specific circumstances. It involves deceitful practices intended to gain something of value. The penalty for fraud varies depending on the amount involved and other factors.",
+                    "Based on the information provided, it appears to be a case of fraud. Fraud, as defined in the Revised Penal Code (RPC), involves deceiving others for personal gain. The penalty for fraud may include imprisonment ranging from 6 months 1 day to 20 years, depending on the circumstances."]
+    },
+    {
+      "tag": "rape",
+      "patterns": ["sexual assault", "forced sex","sexual abuse","Sexually harass", "raped", "rape","sex","sexual penetration","penetration","blood in viginal","insertion"],
+      "responses": ["It sounds like a case of rape. Rape is a serious crime punishable under Article 266-A of the Revised Penal Code (RPC). It involves the unlawful carnal knowledge of a person without their consent. The penalty for rape is imprisonment ranging from 12 years to reclusion perpetua (life imprisonment).",
+                    "Based on the scenario, it appears to be a case of rape. Rape, as defined in Article 266-A of the Revised Penal Code (RPC), involves sexual intercourse without consent. The penalty for rape ranges from 12 years to reclusion perpetua (life imprisonment), depending on the circumstances."]
+    },
+    {
+      "tag": "cybercrime",
+      "patterns": ["cybercrime","online fraud", "cyberbullying", "identity theft", "computer hacking", "hacked", "hack", "hacking", "identity", "intrusion", "intruder","phishing","online scamming","acc","account","scammer in the internet"],
+      "responses": ["This seems like a case of cybercrime. Cybercrimes are punishable under the Cybercrime Prevention Act of 2012 (Republic Act No. 10175) and may involve various offenses such as online fraud, cyberbullying, identity theft, and computer hacking. The penalties for cybercrimes may include imprisonment ranging from 6 months 1 day to 12 years, depending on the offense.",
+                    "Based on the information provided, it appears to be a case of cybercrime. Cybercrimes encompass a range of offenses committed using electronic devices and the internet, including online fraud, cyberbullying, identity theft, and computer hacking. The penalties for cybercrimes may vary depending on the severity of the offense."]
+    },
+    {
+      "tag": "cyberlibel",
+      "patterns": [ "cyberlibel","online defamation","internet libel","defaming someone online","false statement on social media","social media","false statement on the internet","bashed","bashing","bash","posted online","online","internet","fake statements in the internet"],
+      "responses": ["Cyberlibel or Online defamation involves defaming someone online through false or malicious statements. In the Philippines, cyberlibel is punishable under the Cybercrime Prevention Act of 2012 (Republic Act No. 10175). Offenders may face imprisonment of up to 12 years and fines.",
+                 "Cyberlibel or Online defamation refers to publishing false or defamatory statements against someone using the internet. In the Philippines, cyberlibel is a criminal offense under the Cybercrime Prevention Act of 2012 (Republic Act No. 10175), with penalties including imprisonment of up to 12 years and fines."
+      ]
+    },
+    {
+      "tag": "child_abuse",
+      "patterns": ["child neglect", "physical abuse on child", "child exploitation", "child labor", "beating a child","child", "children"],
+      "responses": ["It sounds like a case of child abuse. Child abuse is punishable under various laws, including the Anti-Child Abuse Law (Republic Act No. 7610) and the Special Protection of Children Against Child Abuse, Exploitation and Discrimination Act (Republic Act No. 9231). It includes physical, emotional, or sexual abuse, as well as neglect or exploitation of children. The penalties for child abuse may include imprisonment ranging from 6 months to 20 years, depending on the severity of the offense.",
+                    "Based on the scenario, it appears to be a case of child abuse. Child abuse involves harming or neglecting the well-being of children and is punishable under laws such as the Anti-Child Abuse Law and the Special Protection of Children Against Child Abuse, Exploitation and Discrimination Act. The penalties for child abuse may range from 6 months 1 day to 20 years imprisonment, depending on the severity."]
+    },    
+    { 
+      "tag": "narcotics",
+      "patterns": ["drug possession", "illegal drugs", "drug trafficking", "drug manufacturing", "drug user", "drug pusher", "drugs", "drug","shabu","marijuana","cocaine","weeds","buy bust"],
+      "responses": ["This seems like a case involving narcotics. Offenses related to illegal drugs are punishable under the Comprehensive Dangerous Drugs Act of 2002 (Republic Act No. 9165). They include drug possession, trafficking, distribution, and manufacturing. The penalties for drug offenses may range from imprisonment ranging from 6 months 1 day to life imprisonment, depending on the quantity and type of drugs involved.",
+                    "Based on the information provided, it appears to be a case related to narcotics. Offenses involving illegal drugs are governed by the Comprehensive Dangerous Drugs Act of 2002 and encompass various activities such as drug possession, trafficking, distribution, and manufacturing. The penalties for drug offenses may vary depending on the quantity and type of drugs involved."]
+    },
+    {
+      "tag": "plain_view_doctrine",
+      "patterns": ["plain view doctrine", "plain sight rule", "evidence in plain view", "plain view"],
+      "responses": ["The Plain View Doctrine allows law enforcement officers to seize evidence without a warrant if it is in plain view and immediately apparent as contraband or evidence of a crime. This legal principle is based on the Fourth Amendment to the United States Constitution.",
+                    "Under the Plain View Doctrine, law enforcement officers can lawfully seize evidence that is in plain sight and immediately recognizable as illegal or connected to a crime. However, the seizure must be made from a lawful vantage point and without violating the suspect's reasonable expectation of privacy."]
+    },
+    {
+      "tag": "corruption",
+      "patterns": [ "graft and corruption", "embezzlement of public funds", "kickbacks", "public founds","politician","government budget","money of the people","budget"],
+      "responses": ["It sounds like a case of corruption. Corruption is punishable under various laws, including the Anti-Graft and Corrupt Practices Act (Republic Act No. 3019) and the Code of Conduct and Ethical Standards for Public Officials and Employees (Republic Act No. 6713). It involves acts such as bribery, graft, embezzlement of public funds, and kickbacks. The penalties for corruption may include imprisonment ranging from 6 years to life imprisonment, depending on the amount involved and the position of the offender.",
+                    "Based on the scenario, it appears to be a case of corruption. Corruption encompasses illegal activities such as bribery, graft, embezzlement of public funds, and kickbacks, and is punishable under laws such as the Anti-Graft and Corrupt Practices Act. The penalties for corruption may range from 6 years to life imprisonment, depending on the amount involved and the position of the offender."]
+    },
+    {
+      "tag": "property_damage",
+      "patterns": ["property damage", "destroyed my property", "damaged belongings", "destroying","damage"],
+      "responses": [ "It sounds like a case of property damage. Property damage is punishable under Article 329 of the Revised Penal Code (RPC). It involves willfully destroying or damaging someone else's property without their consent. The penalty for property damage may include imprisonment ranging from 6 months 1 day to 6 years, depending on the value of the damaged property.",
+                "Based on the scenario provided, it appears to be a case of property damage. Property damage, as defined in Article 329 of the Revised Penal Code (RPC), pertains to the intentional destruction or damage to another person's property without their consent. The penalty for property damage may include imprisonment ranging from 6 months 1 day to 6 years, depending on the value of the damaged property."
+      ]
+    },
+    {
+      "tag": "malicious_mischief",
+      "patterns": [ "malicious mischief","destroying someones things","intentionally destroys my", "destroying property","killed my pet","dog","destroys","cow","carabao","property","animal"],
+      "responses": ["Malicious mischief involves intentionally damaging or destroying someone else's property. In the Philippines, this offense is punishable under Article 327 of the Revised Penal Code (RPC). Offenders may face imprisonment and fines, with penalties varying based on the value of the damaged property and other circumstances.",
+               " malicious mischief or Vandalism refers to the intentional damage or destruction of property belonging to others. In the Philippines, this offense is addressed under Article 327 of the Revised Penal Code (RPC). Penalties for malicious mischief may include imprisonment and fines, with severity determined by factors such as the extent of damage and the value of the property."  
+      ]
+    },
+    {
+      "tag": "trespassing",
+      "patterns": ["trespassing", "entered my property without permission", "unlawful entry", "entered in our house", "house", "entered", "enters", "with out permission"],
+      "responses": ["This seems like a case of trespassing. Trespassing is punishable under Article 280 of the Revised Penal Code (RPC). It occurs when someone unlawfully enters or occupies another person's property without permission. The penalty for trespassing may include imprisonment ranging from 6 months 1 day to 2 years, depending on the circumstances.",
+                 "Based on the information provided, it appears to be a case of trespassing. Trespassing, as defined in Article 280 of the Revised Penal Code (RPC), involves the unauthorized entry into someone else's property without permission.  The penalty for trespassing may include imprisonment ranging from 6 months 1 day to 2 years, depending on the circumstances."
+      ]
+    },
+    {
+      "tag": "perjury",
+      "patterns": ["lying under oath", "false testimony", "perjury case", "committing perjury","testimony","fake witness"],
+      "responses": ["It sounds like a case of perjury. Perjury is punishable under Article 183 of the Revised Penal Code (RPC). It involves making false statements under oath or providing false testimony in a judicial proceeding. The penalty for perjury may include imprisonment ranging from 6 months 1 day to 2 years, depending on the gravity of the false statements.",
+                "Based on the scenario provided, it appears to be a case of perjury. Perjury, as defined in Article 183 of the Revised Penal Code (RPC), pertains to the act of providing false statements under oath or in a judicial proceeding. The penalty for perjury may include imprisonment ranging from 6 months 1 day to 2 years, depending on the gravity of the false statements."  
+      ]
+    },
+    {
+      "tag": "blackmail",
+      "patterns": ["blackmailing", "extortion", "threatening to expose", "demanding money or favors", "demand", "demanding", "blackmail"],
+      "responses": [ "Based on the information provided, it appears to be a case of blackmail. Blackmail is punishable under Article 283 of the Revised Penal Code (RPC). It involves threatening to expose someone's secrets or wrongdoing in exchange for money or favors. The penalty for blackmail may include imprisonment ranging from 6 months 1 day to 6 years, depending on the severity of the threat.",
+                "It seems like a case of blackmail. Blackmail, as defined in Article 283 of the Revised Penal Code (RPC), involves the act of threatening to reveal damaging information about someone in order to obtain money or other benefits. The penalty for blackmail may include imprisonment ranging from 6 months 1 day to 6 years, depending on the severity of the threat."
+                 ]
+    },
+    {
+      "tag": "acts_of_lasciviousness",
+      "patterns": ["acts of lasciviousness","unwanted touching","inappropriate behavior","lascivious acts","indecent advances","groping without consent","making lewd gestures","unconscious","din't know","without knowing","did not know","touched","touching me","without consent","inappropriately touch","Feeling violated","sleeping"],
+      "responses": ["It sounds like a case of acts of lasciviousness. Acts of lasciviousness involve inappropriate and unwanted sexual advances or behavior. In the Philippines, this is punishable under Article 336 of the Revised Penal Code. The penalties for acts of lasciviousness include prision correccional in its medium and maximum periods, which means imprisonment ranging from 6 months and 1 day to 6 years.",
+                   "Based on your description, it appears to be acts of lasciviousness. This involves unwanted sexual behavior or advances. Under Article 336 of the Revised Penal Code in the Philippines, the penalties for acts of lasciviousness are prision correccional in its medium and maximum periods, which translates to imprisonment ranging from 6 months and 1 day to 6 years."
+                  ]
+    },
+    {
+      "tag": "harassment",
+      "patterns": ["harassment", "intimidation", "bullying", "unwanted advances","private part","touching", "touched my body", "touched", "bad words", "harass","harassed", "private part", "discomfort", "i feel uncomfortable","sexualizing","kissed","kiss","sexualized","taking avantage","weakness","uncomfortable"],
+      "responses": [ "This seems like a case of harassment. Harassment is punishable under various laws, including the Anti-Sexual Harassment Act (Republic Act No. 7877) and the Anti-Bullying Act (Republic Act No. 10627). It involves unwanted behavior that creates an intimidating, hostile, or offensive environment. The penalties for harassment may include imprisonment ranging from 6 months 1 day to 6 years, depending on the severity of the offense.",
+                  "Based on the scenario provided, it appears to be a case of harassment. Harassment, as defined in various laws including the Anti-Sexual Harassment Act (Republic Act No. 7877) and the Anti-Bullying Act (Republic Act No. 10627), refers to unwanted behavior that creates a hostile or offensive environment. The penalties for harassment may include imprisonment ranging from 6 months 1 day to 6 years, depending on the severity of the offense."
+                  ]
+  },
+       
+    {
+      "tag": "arson",
+      "patterns": ["arson", "setting fire", "burning property", "fire damage", "burns", "burned", "burning", "fire","sets fire on"],
+      "responses": [ "It sounds like a case of arson. Arson is punishable under Article 320 of the Revised Penal Code (RPC). It involves intentionally setting fire to someone else's property without their consent. The penalty for arson may include imprisonment ranging from 6 to 20 years, depending on the extent of the damage and loss of life.",
+                  "Based on the scenario provided, it appears to be a case of arson. Arson, as defined in Article 320 of the Revised Penal Code (RPC), pertains to the intentional act of setting fire to property without lawful authority. The penalty for arson may include imprisonment ranging from 6 to 20 years, depending on the extent of the damage and loss of life."
+                  ]
+    },
+    {
+      "tag": "kidnapping",
+      "patterns": ["kidnapping","kidnapped", "abduction", "forcibly taking someone","hostage situation", "forcedly taken", "hostage","unidentified man take my","in a white van","in a van"],
+      "responses": [ "This seems like a case of kidnapping. Kidnapping is punishable under Article 267 of the Revised Penal Code (RPC). It involves unlawfully taking or detaining another person against their will for ransom, extortion, or other unlawful purposes. The penalty for kidnapping may include life imprisonment or death penalty, depending on the circumstances and outcome of the crime.",
+                  "Based on the information provided, it appears to be a case of kidnapping. Kidnapping, as defined in Article 267 of the Revised Penal Code (RPC), refers to the unlawful act of taking or detaining someone against their will, often for ransom or extortion. The penalty for kidnapping may include life imprisonment or death penalty, depending on the circumstances and outcome of the crime."  
+                 ]
+    },
+    {
+      "tag": "alarm_and_scandal",
+      "patterns": ["alarm and scandal", "disturbing public peace", "indecent behavior in public", "disturbance","shouting","loud noise","loudly","explosives","firing a gun","explosion","panic"],
+      "responses": ["Based on your description, it appears to be a case of alarm and scandal. This offense involves causing public disturbance or panic through actions that disrupt peace. Under Article 155 of the Revised Penal Code in the Philippines, the penalties for alarm and scandal can include arresto menor, which is imprisonment for 1 day to 30 days, or a fine not exceeding 200 pesos, or both, depending on the specifics of the case.",
+                     "It sounds like a case of alarm and scandal. Alarm and scandal involve causing public disturbance or panic through unlawful acts. In the Philippines, this is punishable under Article 155 of the Revised Penal Code. The penalties for alarm and scandal can include arresto menor, which means imprisonment for a period ranging from 1 day to 30 days, or a fine not exceeding 200 pesos, or both, depending on the circumstances."
+                   ]
+    },
+    {
+      "tag": "oral_defamation",
+      "patterns": [ "spoken false statements", "oral defamation","slander", "defaming someone verbally","not true","telling","saying","accusing me","accusing","fake statements about me"],
+      "responses": [ "It seems like a case of oral defamation. Oral defamation, also known as slander, occurs when false and defamatory statements are spoken or uttered against someone. This is punishable under Article 358 of the Revised Penal Code (RPC) in the Philippines. The penalties for oral defamation may include imprisonment ranging from 1 month and 1 day to 6 months, or a fine, depending on the circumstances.",
+                  "Based on the information provided, it appears to be a case of oral defamation. Oral defamation, also referred to as slander, involves making false and defamatory statements verbally against someone. This is punishable under Article 358 of the Revised Penal Code (RPC) in the Philippines. The penalties for oral defamation may include imprisonment ranging from 1 month and 1 day to 6 months, or a fine, depending on the circumstances."
+                   ]
+    },
+    {
+      "tag": "libel",
+      "patterns": [ "writing false and harmful statements","publishing damaging claims","spreading lies in print","writing untrue accusations","writing","article"],
+      "responses": ["Libel occurs when someone writes or publishes false and harmful statements about another person. In the Philippines, libel is considered a crime under Article 353 of the Revised Penal Code (RPC). Those found guilty may face imprisonment and fines.",
+                    "Writing false and damaging statements about someone is considered libel. In the Philippines, libel is punishable under Article 353 of the Revised Penal Code (RPC), with penalties including imprisonment and fines." 
+                   ]
+    },
+    {
+      "tag": "abortion",
+      "patterns": ["abortion", "miscarriage", "ending pregnancy", "stopping pregnancy", "getting rid of pregnancy", "pregnancy termination", "medical procedure to end pregnancy", "pregnant","womb","fetus"],
+      "responses": ["It seems like Abortion, abortion refers to ending a pregnancy intentionally, usually done in the early stages. In the Philippines, abortion is generally illegal under the law, specifically under the Revised Penal Code (RPC) Article 256, with exceptions allowed only if it's necessary to save the life of the mother. Breaking this law can lead to imprisonment and other penalties as prescribed by the RPC.",
+                    "It seems like Abortion, the topic of abortion is complex and involves ethical, moral, and legal issues. Some argue for access to safe and legal abortion services as part of women's reproductive health and rights, while others emphasize the protection of fetal rights and the sanctity of human life, under the Revised Penal Code (RPC) Article 256, with exceptions allowed only if it's necessary to save the life of the mother. Breaking this law can lead to imprisonment and other penalties as prescribed by the RPC."]
+    },
+    {
+      "tag": "abandoning_minor",
+      "patterns": ["abandoning a minor", "leaving a child unattended", "child abandonment","neglecting a minor", "deserting a child","leave","left","abandoned"],
+      "responses": [ "Abandoning a minor, also known as child abandonment, occurs when a parent or guardian leaves a child without proper care, supervision, or support. In the Philippines, child abandonment is punishable under Article 276 of the Revised Penal Code (RPC). The penalties for abandoning a minor may include imprisonment and fines, depending on the circumstances and the harm caused to the child.",
+                   "Abandoning a minor, leaving a child unattended or neglecting a minor is a serious offense known as child abandonment. This occurs when a parent or guardian fails to provide adequate care, supervision, or support to a child. In the Philippines, child abandonment is punishable under Article 276 of the Revised Penal Code (RPC). The penalties for child abandonment may include imprisonment and fines, depending on the circumstances." 
+                  ]
+    },
+    {
+      "tag": "grave_threats",
+      "patterns": ["Someone is threatening me","I am being threatened","They said they will harm me","I feel intimidated by their threats","They are threatening to kill me","I fear for my life","I feel unsafe because of their threats","They almost killed me","I am scared they will hurt me","They are making threats against me"],
+      "responses": ["Grave threats occur when someone threatens another person with harm or violence, causing the victim to fear for their safety or the safety of their loved ones. In the Philippines, grave threats are punishable under Article 282 of the Revised Penal Code (RPC). The penalties for grave threats may include imprisonment or fines, depending on the circumstances and severity of the threat.", 
+                 "Grave threats, threatening someone with harm or violence, especially when the threat is serious and credible, constitutes grave threats. In the Philippines, grave threats are a criminal offense under Article 282 of the Revised Penal Code (RPC). The penalties for grave threats may include imprisonment or fines, depending on the gravity of the threat and its impact on the victim."
+                  ]
+    },
+    {
+      "tag": "grave_coercion",
+      "patterns": ["grave coercion","forcing someone to do something","threatening to make obey","against their will","intimidating to comply", "something against my will","will","force me to do","i don't want","against my will","to do", "to make","wants me","my boss","senior","manager","i don't like","can't make"],
+      "responses": [ "Grave coercion refers to the act of compelling someone to do something against their will through violence, intimidation, or threat of harm. In the Philippines, grave coercion is punishable under Article 286 of the Revised Penal Code (RPC). The penalties for grave coercion may include imprisonment or fines, depending on the circumstances and severity of the coercion.",
+                    "Grave coercion, when someone uses violence, intimidation, or threats to force another person to do something against their will, it constitutes grave coercion. In the Philippines, grave coercion is considered a criminal offense under Article 286 of the Revised Penal Code (RPC). The penalties for grave coercion may include imprisonment or fines, depending on the gravity of the coercion and its impact on the victim."
+                   ]
+    },
+    {
+      "tag": "qualified_theft",
+      "patterns": [ "qualified theft", "stealing with aggravating circumstances","theft with specific conditions", "theft involving certain elements", "stealing with heightened penalty"],
+      "responses": [ "Qualified theft occurs when theft is committed under aggravating circumstances specified by law, such as involving violence, intimidation, or deceit. In the Philippines, qualified theft is punishable under Article 310 of the Revised Penal Code (RPC). The penalties for qualified theft may include imprisonment and fines, with heightened penalties depending on the value of the stolen property and other aggravating factors.",
+                    "Qualified theft, when theft is committed with specific aggravating circumstances, it becomes qualified theft. These circumstances may include violence, intimidation, or deceit. In the Philippines, qualified theft is considered a serious offense under Article 310 of the Revised Penal Code (RPC). Penalties for qualified theft may include imprisonment and fines, with higher penalties for theft involving larger amounts or other aggravating factors."
+   ]
+    },
+    {
+      "tag": "usurpation",
+      "patterns": ["usurpation", "unlawful assumption of authority","illegitimate seizure of power","wrongful occupation of position","taking someone else's role or title","use of uniform", "pretending to be a police or army", "Army uniform", "police uniform", "pretending","pretends"],
+      "responses": [ "Usurpation occurs when someone unlawfully assumes authority or seizes power that does not rightfully belong to them. In the Philippines, usurpation is punishable under Article 312 of the Revised Penal Code (RPC). The penalties for usurpation may include imprisonment and fines, depending on the nature and gravity of the usurped authority.",
+                    "Usurpation, when someone wrongfully occupies a position or assumes authority that they are not entitled to, it constitutes usurpation. In the Philippines, usurpation is considered a criminal offense under Article 312 of the Revised Penal Code (RPC). Penalties for usurpation may include imprisonment and fines, with severity depending on the extent of the usurped authority and the harm caused."
+                  ]
+    },
+    {
+      "tag": "chattel_mortgage",
+      "patterns": ["chattel mortgage","secured loan using personal property","collateral-based loan","mortgage on movable property","pledging personal belongings for a loan"],
+      "responses": [ "A chattel mortgage is a type of secured loan where personal property, such as vehicles or equipment, is used as collateral. In the Philippines, chattel mortgages are governed by the Chattel Mortgage Law (Act No. 1508). This law outlines the legal requirements and procedures for creating and enforcing chattel mortgages.",
+                   "A chattel mortgage, when you use personal property, such as a vehicle or machinery, as collateral for a loan, it's called a chattel mortgage. In the Philippines, chattel mortgages are regulated by the Chattel Mortgage Law (Act No. 1508). This law establishes the legal framework for creating and enforcing chattel mortgages, protecting the rights of both borrowers and lenders."
+                    ]
+    },
+    {
+      "tag": "disturbance_of_proceedings",
+      "patterns": ["disturbance of proceedings","disruption of legal proceedings","interference with court proceedings","obstruction of justice","hindering legal process"],
+      "responses": [ "Disturbance of proceedings refers to any act that disrupts or interferes with the orderly conduct of legal proceedings, such as court hearings or trials. In the Philippines, disturbance of proceedings is punishable under Article 143 of the Revised Penal Code (RPC). The penalties for disturbance of proceedings may include imprisonment or fines, depending on the severity of the disturbance and its impact on the legal process.",
+                   "Interfering with the proper conduct of legal proceedings, whether by disrupting court hearings or obstructing justice, constitutes disturbance of proceedings. In the Philippines, disturbance of proceedings is considered a criminal offense under Article 143 of the Revised Penal Code (RPC). Penalties for disturbance of proceedings may include imprisonment or fines, depending on the gravity of the disruption and its consequences for the legal process."
+                  ]
+    },
+    {
+      "tag": "reckless_driving",
+      "patterns": ["Driving recklessly","Speeding and driving dangerously","Careless driving behavior", "Driving too fast and weaving through traffic","Ignoring traffic signals and rules","Putting others at risk on the road","driving","rode", "hit and run"], 
+      "responses": [ "Reckless driving refers to operating a vehicle in a manner that poses a significant risk to others on the road. This includes behaviors such as speeding, weaving through traffic, and ignoring traffic signals. In the Philippines, reckless driving is punishable under Article 365 of the Revised Penal Code. Penalties for reckless driving may include fines, license suspension, or even imprisonment, depending on the severity of the offense.",
+                   "Driving dangerously, also known as reckless driving, involves behaviors that endanger the safety of others on the road. Such behaviors include speeding, careless maneuvering, and disregarding traffic rules. In the Philippines, reckless driving is a serious offense punishable under Article 365 of the Revised Penal Code. Offenders may face significant fines, license suspension, or imprisonment, depending on the circumstances."
+                 ]   
+    },
+    {
+      "tag": "plagiarism",
+      "patterns": ["plagiarism","copying someone else's work",  "academic dishonesty", "intellectual property theft", "academic dishonesty", "using someone else's ideas without credit","stealing my content","without being cited","did not put in citation","credit"],
+      "responses": [ "Plagiarism is the act of using someone else's work, ideas, or words without giving them proper credit. It can occur in various forms, such as copying and pasting text, paraphrasing without citation, or presenting someone else's ideas as your own. Plagiarism is considered academic dishonesty and can have serious consequences, including failing grades, expulsion, or legal action. In the Philippines, plagiarism is punishable under Article 171 of the Revised Penal Code. Depending on the severity of the offense, penalties may include imprisonment or fines. Additionally, plagiarists may also face civil penalties such as damages for copyright infringement.",
+                  "Plagiarism undermines the integrity of academic and creative work by dishonestly claiming credit for someone else's ideas or creations. Whether it's copying passages from a book, using images without permission, or presenting another person's research findings as your own, plagiarism is unethical and unacceptable. In addition to academic repercussions like failing grades or expulsion, plagiarists may also face legal consequences such as imprisonment or fines under Article 171 of the Revised Penal Code in the Philippines. Furthermore, civil lawsuits for copyright infringement may result in fines or damages."
+                  ]
+    },
+    {
+      "tag": "unjust_vexation",
+      "patterns": ["unjust vexation","someone is bothering me without reason","I'm being annoyed for no resean","I'm being irritated without clear reason ","I'm being troubled for no reason", "someone is causing me distress without a valid reason","annoying","irritated"],
+      "responses": ["It sounds like a case of unjust vexation. Unjust vexation refers to acts that deliberately cause annoyance, irritation, or distress to another person without a legitimate reason. In the Philippines, this is punishable under Article 287 of the Revised Penal Code. The penalties for unjust vexation can include arresto menor, which translates to imprisonment for a period ranging from 1 day to 30 days, or a fine ranging from 1 to 200 pesos, or both, depending on the circumstances.",
+                  "Based on your description, it appears to be unjust vexation. Unjust vexation involves intentionally causing annoyance or irritation to someone without any valid reason. Under Article 287 of the Revised Penal Code in the Philippines, this offense is punishable by arresto menor, meaning imprisonment for 1 day to 30 days, or a fine from 1 to 200 pesos, or both, depending on the specifics of the case."   
+                  ]
+    },
+    {
+      "tag": "burglary",
+      "patterns": ["burglary","someone broke into my house last night","my house was burglarized while I was away","there was a break-in at my place","someone forced their way into my home","someone entered my property illegally","I came home to find my place ransacked","there was an illegal entry into my home","I think someone broke in and robbed us","someone smashed a window and got into my house","I found my door broken and things missing","my apartment was broken into and items were stolen","someone picked my lock and entered my home","someone invaded my home","we were out and someone broke into our place","my house got broken into and valuable things were taken"],
+      "responses": ["It sounds like a case of burglary. Burglary involves illegally entering a building or property with the intent to commit a crime, typically theft. In the Philippines, this is punishable under Article 299 of the Revised Penal Code. The penalties for burglary can include prision mayor, which is imprisonment ranging from 6 years and 1 day to 12 years, or prision correccional in its maximum period, which is imprisonment ranging from 4 years, 2 months, and 1 day to 6 years, depending on the circumstances.",
+                "Based on your description, it appears to be a case of burglary. This offense involves unlawfully breaking into a property with the intent to commit theft or another crime. Under Article 299 of the Revised Penal Code in the Philippines, the penalties for burglary can include prision mayor, which is imprisonment ranging from 6 years and 1 day to 12 years, or prision correccional in its maximum period, which is imprisonment ranging from 4 years, 2 months, and 1 day to 6 years, depending on the specifics of the case."
+                  ]
+    },
+    {
+      "tag": "impossible_crime",
+      "patterns": ["impossiblen crime","but failed","didn't work out"," illegal but couldn't do it"," it was impossible","I tried"," wasn't possible"," couldn't finish it","already dead","died in","die for no reason","die"],
+      "responses": [ "It sounds like a case of an impossible crime. An impossible crime occurs when a person attempts to commit a crime but fails to complete it due to some impossibility, either because the means to commit the crime are inadequate or because the act does not result in the intended crime. In the Philippines, this is addressed under Article 4 of the Revised Penal Code. The penalties for an impossible crime are typically arresto mayor, which is imprisonment ranging from 1 month and 1 day to 6 months, or a fine ranging from 200 to 500 pesos.",
+                    "Based on your description, it appears to be an impossible crime. This involves an attempt to commit a crime that fails due to some impossibility, such as inadequate means or the nature of the act itself. Under Article 4 of the Revised Penal Code in the Philippines, the penalties for an impossible crime can include arresto mayor, which is imprisonment ranging from 1 month and 1 day to 6 months, or a fine ranging from 200 to 500 pesos."
+                  ]
+    },
+    
+    {
+      "tag": "file_case",
+      "patterns": ["How can I file a case", "I need to take legal action","Legal action","assistance please","need assistance", "assistant","i have a complaint","incident"],
+      "responses": ["I can assist you with that. Please provide details about the incident, and I'll give you an idea about possible case base on the incident you give. Remember to refer to the corresponding articles in the Revised Penal Code (RPC) for legal basis and penalties."]
+    },
+    {
+      "tag": "please_help",
+      "patterns": ["please help", "help me", "help"],
+      "responses": ["Let me help you. Please be specific with your questions to get more accurate response. If you need information about specific cases, I can provide details based on the Revised Penal Code (RPC) and its corresponding penalties.",
+                    "Of course, how can I assist you? Please provide more details about your inquiry. If you're looking for information about criminal cases, I can provide details based on the Revised Penal Code (RPC) and its penalties.",
+                    "I'm here to help. What do you need assistance with? Please provide more information so I can assist you better. If you have questions about criminal cases, I can provide details based on the Revised Penal Code (RPC) and its penalties."]
+    },
+    {
+      "tag": "thank_you",
+      "patterns": ["thank you ALiCS", "thanks", "thanks a lot", "appreciate it","thank you"],
+      "responses": ["You're welcome! If you have any more questions, feel free to ask.", 
+                    "Glad I could help! Let me know if there's anything else I can assist you with.", 
+                    "No problem at all! Don't hesitate to reach out if you need further assistance."]
+    }
+  ]
+}
