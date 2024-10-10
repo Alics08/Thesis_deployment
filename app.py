@@ -8,6 +8,7 @@ from keras.models import load_model
 import json
 import random
 from flask import Flask, render_template, request
+from flask_cors import CORS  # Import CORS
 
 # Load the pre-trained model and data
 model = load_model('chatbot_model.h5')
@@ -72,7 +73,7 @@ def chatbot_response(msg):
 
 # Initialize Flask app
 app = Flask(__name__)
-
+CORS(app)  # Enable CORS for the entire app
 
 app.static_folder = 'static'
 
