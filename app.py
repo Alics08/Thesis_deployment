@@ -8,7 +8,6 @@ from keras.models import load_model
 import json
 import random
 from flask import Flask, render_template, request
-from flask_cors import CORS  # Import CORS
 
 # Load the pre-trained model and data
 model = load_model('chatbot_model.h5')
