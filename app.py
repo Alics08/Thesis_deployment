@@ -72,7 +72,7 @@ def chatbot_response(msg):
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for the entire app
+
 
 app.static_folder = 'static'
 
