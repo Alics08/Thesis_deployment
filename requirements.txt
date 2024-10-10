@@ -104,6 +104,7 @@ markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 matplotlib==3.8.3
 matplotlib-inline==0.1.6
+maturin==1.7.4
 mdurl==0.1.2
 mistune==3.0.2
 mkl==2021.4.0
@@ -156,6 +157,7 @@ python-engineio==4.9.0
 python-json-logger==2.0.7
 python-socketio==5.11.1
 pytz==2024.1
+pywin32==307
 pywinpty==2.0.13
 PyYAML==6.0.1
 pyzmq==25.1.2
