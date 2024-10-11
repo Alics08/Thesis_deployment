@@ -41,7 +41,7 @@
     </main>
 
     <form class="msger-inputarea">
-      <input type="text" class="msger-input" id="textInput" placeholder="Enter your complains....">
+      <input type="text" class="msger-input" id="textInput" placeholder="Enter your complaints....">
       <button type="submit" class="msger-send-btn">Send</button>
     </form>
   </section>
@@ -91,6 +91,10 @@
           const msgText = data;
           appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
         })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+          console.error("Error: " + textStatus, errorThrown);
+          appendMessage(BOT_NAME, BOT_IMG, "left", "Sorry, I could not connect to the server. Please try again later.");
+        });
     }
 
     function formatDate(date) {
