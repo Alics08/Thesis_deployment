@@ -10,6 +10,11 @@ import random
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS  # Import CORS
 import os
+import logging  # Import logging
+
+# Set up logging configuration
+logging.basicConfig(level=logging.INFO, 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load the pre-trained model and data
 model = load_model('chatbot_model.h5')
@@ -30,7 +35,7 @@ def bow(sentence, words, show_details=True):
             if w == s: 
                 bag[i] = 1
                 if show_details:
-                    print("found in bag: %s" % w)
+                    logging.info("found in bag: %s" % w)  # Log found words
     return np.array(bag)
 
 def predict_class(sentence, model):
@@ -42,6 +47,7 @@ def predict_class(sentence, model):
     return_list = []
     for r in results:
         return_list.append({"intents": classes[r[0]], "probability": str(r[1])})
+    logging.info(f"Prediction results: {return_list}")  # Log prediction results
     return return_list
 
 class YourChatbotClass:
@@ -50,11 +56,15 @@ class YourChatbotClass:
         self.intents = intents
 
     def get_response(self, predicted_intent, confidence, sentence):
+        logging.info(f"Received message: {sentence}")  # Log received message
+        logging.info(f"Predicted intent: {predicted_intent} with confidence: {confidence}")  # Log intent and confidence
         if confidence > self.threshold:
             for intent in self.intents['intents']:
                 if intent['tag'] == predicted_intent:
                     responses = intent['responses']
-                    return random.choice(responses)
+                    selected_response = random.choice(responses)
+                    logging.info(f"Selected response: {selected_response}")  # Log selected response
+                    return selected_response
             return "I'm sorry, that's beyond my trained knowledge. Can you please provide more information or rephrase your question?"
         else:
             sentence_words = clean_up_sentence(sentence)
@@ -66,8 +76,12 @@ class YourChatbotClass:
 
 def chatbot_response(msg):
     ints = predict_class(msg, model)
-    res = chatbot.get_response(ints[0]['intents'], float(ints[0]['probability']), msg)
-    return res
+    if ints:  # Check if predictions are available
+        res = chatbot.get_response(ints[0]['intents'], float(ints[0]['probability']), msg)
+        return res
+    else:
+        logging.warning(f"No intents predicted for message: {msg}")  # Log warning if no intent is found
+        return "I'm sorry, I didn't understand that."
 
 # Initialize Flask app
 app = Flask(__name__)
