@@ -9,6 +9,7 @@ import json
 import random
 from flask import Flask, render_template, request
 from flask_cors import CORS  # Import CORS
+import os
 
 # Load the pre-trained model and data
 model = load_model('chatbot_model.h5')
@@ -73,7 +74,8 @@ def chatbot_response(msg):
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for the entire app
+CORS(app, resources={r"/*": {"origins": "*"}})
+ # Enable CORS for the entire app
 
 app.static_folder = 'static'
 
@@ -89,5 +91,6 @@ def get_bot_response():
 chatbot = YourChatbotClass(0.97, intents)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000, debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)), debug=True)  # For testing
+
 
