@@ -14,8 +14,8 @@ import os
 # Load the pre-trained model and data
 model = load_model('chatbot_model.h5')
 intents = json.loads(open('data.json').read())
-words = pickle.load(open('words.pkl','rb'))
-classes = pickle.load(open('classes.pkl','rb'))
+words = pickle.load(open('words.pkl', 'rb'))
+classes = pickle.load(open('classes.pkl', 'rb'))
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -26,7 +26,7 @@ def bow(sentence, words, show_details=True):
     sentence_words = clean_up_sentence(sentence)
     bag = [0]*len(words)  
     for s in sentence_words:
-        for i,w in enumerate(words):
+        for i, w in enumerate(words):
             if w == s: 
                 bag[i] = 1
                 if show_details:
@@ -55,16 +55,13 @@ class YourChatbotClass:
                 if intent['tag'] == predicted_intent:
                     responses = intent['responses']
                     return random.choice(responses)
-            # If predicted intent not found, return a default message
             return "I'm sorry, that's beyond my trained knowledge. Can you please provide more information or rephrase your question?"
         else:
-            # Check if any keyword in the sentence matches any patterns
             sentence_words = clean_up_sentence(sentence)
             for word in sentence_words:
                 for intent in self.intents['intents']:
                     if word in intent['patterns']:
                         return "I'm sorry, that's beyond my trained knowledge. Can you please provide more information or rephrase your question?"
-            # If no keywords match, return a default message
             return "I'm sorry, that's beyond my trained knowledge. Could you please rephrase or be more specific?"
 
 def chatbot_response(msg):
@@ -74,10 +71,7 @@ def chatbot_response(msg):
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
- # Enable CORS for the entire app
-
-app.static_folder = 'static'
+CORS(app)  # Enable CORS for the entire app
 
 @app.route("/")
 def home():
@@ -91,6 +85,4 @@ def get_bot_response():
 chatbot = YourChatbotClass(0.97, intents)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)), debug=True)  # For testing
-
-
+    app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)), debug=os.environ.get('FLASK_DEBUG', '0') == '1')  # For testing
