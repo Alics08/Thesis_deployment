@@ -17,10 +17,10 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load the pre-trained model and data
-model = load_model('chatbot_model.h5')
-intents = json.loads(open('data.json').read())
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
+model = load_model(os.path.join(os.path.dirname(__file__), 'chatbot_model.h5'))
+intents = json.loads(open(os.path.join(os.path.dirname(__file__), 'data.json')).read())
+words = pickle.load(open(os.path.join(os.path.dirname(__file__), 'words.pkl'), 'rb'))
+classes = pickle.load(open(os.path.join(os.path.dirname(__file__), 'classes.pkl'), 'rb'))
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
