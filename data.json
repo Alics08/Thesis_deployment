@@ -287,7 +287,7 @@
     },
     {
       "tag": "child_abuse",
-      "patterns": ["child neglect", "physical abuse on child", "child exploitation", "child labor", "beating a child","child", "children"],
+      "patterns": ["child abuse","child neglect", "physical abuse on child", "child exploitation", "child labor", "beating a child","child", "children","young age"],
       "responses": ["It sounds like a case of child abuse. Child abuse is punishable under various laws, including the Anti-Child Abuse Law (Republic Act No. 7610) and the Special Protection of Children Against Child Abuse, Exploitation and Discrimination Act (Republic Act No. 9231). It includes physical, emotional, or sexual abuse, as well as neglect or exploitation of children. The penalties for child abuse may include imprisonment ranging from 6 months to 20 years, depending on the severity of the offense.",
                     "Based on the scenario, it appears to be a case of child abuse. Child abuse involves harming or neglecting the well-being of children and is punishable under laws such as the Anti-Child Abuse Law and the Special Protection of Children Against Child Abuse, Exploitation and Discrimination Act. The penalties for child abuse may range from 6 months 1 day to 20 years imprisonment, depending on the severity."]
     },    
