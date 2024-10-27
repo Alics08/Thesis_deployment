@@ -14,10 +14,7 @@
   <div>
     <div class="menu-bar">
       <h2 class="Disclaimer">Disclaimer:</h2>
-      <button onclick="toggleDisclaimer()" class="hide-btn">Hide</button>
-      <p id="disclaimer-text">
-        "ALiCS provides general legal advice limited to the Revised Penal Code (RPC). It is not a substitute for expert assistance. Consult a qualified lawyer for personalized guidance. Use does not create attorney-client relationships, and reliance on information is at the user's own risk."
-      </p>
+      <p>"ALiCS provides general legal advice limited to the Revised Penal Code (RPC). It is not a substitute for expert assistance. Consult a qualified lawyer for personalized guidance. Use does not create attorney-client relationships, and reliance on information is at the user's own risk."</p>
     </div>
   </div>
 
@@ -60,13 +57,13 @@
     const PERSON_NAME = "You";
 
     msgerForm.addEventListener("submit", event => {
-      event.preventDefault();
-      const msgText = msgerInput.value.trim();
-      if (!msgText) return;
+      event.preventDefault();  // Prevents the default form submission
+      const msgText = msgerInput.value.trim(); // Trim whitespace
+      if (!msgText) return; // Do nothing if input is empty
 
       appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
-      msgerInput.value = "";
-      botResponse(msgText);
+      msgerInput.value = ""; // Clear input field
+      botResponse(msgText); // Get bot response
     });
 
     function appendMessage(name, img, side, text) {
@@ -83,7 +80,7 @@
         </div>`;
       
       msgerChat.insertAdjacentHTML("beforeend", msgHTML);
-      msgerChat.scrollTop = msgerChat.scrollHeight;
+      msgerChat.scrollTop = msgerChat.scrollHeight; // Scroll to the bottom
     }
 
     function botResponse(rawText) {
@@ -91,7 +88,8 @@
         .done(function (data) {
           console.log("User Input: ", rawText);
           console.log("Bot Response: ", data);
-          appendMessage(BOT_NAME, BOT_IMG, "left", data);
+          const msgText = data; // Ensure the response is correctly received
+          appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
         })
         .fail(function (jqXHR, textStatus, errorThrown) {
           console.error("Error: " + textStatus, errorThrown);
@@ -103,19 +101,6 @@
       const h = "0" + date.getHours();
       const m = "0" + date.getMinutes();
       return `${h.slice(-2)}:${m.slice(-2)}`;
-    }
-
-    function toggleDisclaimer() {
-      const disclaimerText = document.getElementById("disclaimer-text");
-      const hideBtn = document.querySelector(".hide-btn");
-
-      if (disclaimerText.style.display === "none") {
-        disclaimerText.style.display = "block";
-        hideBtn.textContent = "Hide";
-      } else {
-        disclaimerText.style.display = "none";
-        hideBtn.textContent = "Show";
-      }
     }
   </script>
 </body>
