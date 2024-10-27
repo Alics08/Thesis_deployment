@@ -236,7 +236,137 @@ flex-direction:row;
 .msger-chat {
   background-color:#36383f;
   background-image: url("https://middlebrooksshapiro.com/wp-content/uploads/2021/03/bigstock-Business-Technology-Internet-399441008.jpg");
-  background-size:408px;
+  background-size:408px;:root {
+    --body-bg: #36383f;
+    --msger-bg: #ffffff;
+    --border: 2px solid #f7fbf8;
+    --left-msg-bg: rgba(255, 255, 255, 0.9);
+    --right-msg-bg: rgb(0, 145, 255);
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    background-color: var(--body-bg);
+  }
+  
+  .menu-bar {
+    width: 115px;
+    height: 270.5px;
+    padding: 12px;
+    text-align: justify;
+    background-color: rgba(28, 23, 23, 0.4);
+    color: #fffff0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .msger {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 280px;
+    background: var(--msger-bg);
+    border: var(--border);
+    margin: 0 35px;
+    width: 565px;
+  }
+  
+  .msger-header {
+    text-align: center;
+    background: #67686C;
+    color: rgb(255, 207, 0);
+    padding: 10px 0;
+  }
+  
+  .img_1 {
+    width: 22px;
+    vertical-align: middle;
+    padding-top: 11px;
+  }
+  
+  .msger-chat {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 10px;
+    background: #36383f url("https://middlebrooksshapiro.com/wp-content/uploads/2021/03/bigstock-Business-Technology-Internet-399441008.jpg") center no-repeat;
+    background-size: 408px;
+    filter: brightness(65%);
+  }
+  
+  .msger-chat::-webkit-scrollbar {
+    width: 5px;
+  }
+  .msger-chat::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+  }
+  
+  .msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 12px;
+  }
+  
+  .msg-img {
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  .msg-bubble {
+    max-width: 278px;
+    padding: 6px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 12px;
+  }
+  
+  .left-msg .msg-bubble {
+    background: var(--left-msg-bg);
+  }
+  .right-msg .msg-bubble {
+    background: var(--right-msg-bg);
+    color: #000;
+  }
+  
+  .msger-inputarea {
+    display: flex;
+    padding: 6px;
+    background: #fffff1;
+  }
+  
+  .msger-input {
+    flex: 2;
+    background: #000;
+    color: #fffff0;
+    border-radius: 30px;
+    padding: 5px;
+  }
+  
+  .msger-send-btn {
+    background: #56595b;
+    color: #fff;
+    border-radius: 30px;
+  }
+  .msger-send-btn:hover {
+    background: #2e2e2f;
+  }
+  
   background-repeat: no-repeat;
   background-position: center;
   filter: brightness(65%);
