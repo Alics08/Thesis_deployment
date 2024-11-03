@@ -1,117 +1,190 @@
+:root {
+  --body-bg: #36383f;
+  --msger-bg: #ffffff;
+  --border: 2px solid #f7fbf8;
+  --left-msg-bg: rgba(255, 255, 255, 0.9);
+  --right-msg-bg: rgb(0, 145, 255);
+}
+
+html {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 body {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
+  height: 100%;
   font-family: Helvetica, sans-serif;
+  padding-left: 25px;
+  width: 590px;
+  margin-left: auto;
+  box-sizing: content-box;
   background-color: #36383f;
-  margin: 0;
-  height: 100vh;
+  max-width: 100%;
 }
 
 .menu-bar {
-  width: 100%;
-  padding: 15px;
-  color: #ffffff;
-  background-color: #333;
+  width: 115px;
+  height: 270.5px;
+  font-size: 7px;
+  padding-right: 3px;
+  padding-left: 4px;
+  margin-left: 16px;
+  padding-top: 11.5px;
+  text-align: justify;
+  background-color: rgba(28, 23, 23, 0.4);
+  border: 0px solid blue;
+  color: #fffff0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.hamburger-menu {
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.hamburger-menu span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 4px 0;
-}
-
-.disclaimer-text.hide {
-  display: none;
+.Disclaimer {
+  font-style: normal;
+  font-family: Circular, Arial, sans-serif;
+  font-size: large;
 }
 
 .msger {
   display: flex;
-  flex-direction: column;
-  max-width: 90%;
-  height: 400px;
-  background: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  flex-flow: column wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 280px;
+  border: var(--border);
+  background: var(--msger-bg);
+  box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(9, 9, 9, 0.5);
+  width: 565px;
+  margin: 6px 0 10px 0;
+}
+
+h1 {
+  font-size: 26px;
+  text-align: center;
+  font-family: Times, Times New Roman, serif;
+  font-weight: bolder;
+  color: rgb(255, 207, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
 }
 
 .msger-header {
-  background: #67686c;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px 5px 0 0;
+  font-size: medium;
+  text-align: center;
+  background: #67686C;
+  font-weight: bold;
 }
 
-.msger-header-title {
-  font-size: 1.2rem;
+.img_1 {
+  width: 22px;
+  padding-top: 11px;
 }
 
 .msger-chat {
   flex: 1;
-  padding: 10px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  padding: 2px;
+  background-color: #36383f;
+  background-image: url("https://middlebrooksshapiro.com/wp-content/uploads/2021/03/bigstock-Business-Technology-Internet-399441008.jpg");
+  background-size: 408px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(65%);
+}
+
+.msger-chat::-webkit-scrollbar {
+  width: 2px;
+}
+
+.msger-chat::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.msger-chat::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
 }
 
 .msg {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.msg-img {
+  width: 22px;
+  height: 22px;
+  margin-right: 2px;
+  background: #0037b8;
+  border-radius: 100%;
+}
+
+.msg-bubble {
+  max-width: 278px;
+  padding: 3px;
+  border-radius: 10px;
+  background: var(--left-msg-bg);
+  font-family: monospace;
+  font-size: 10px;
 }
 
 .left-msg .msg-bubble {
-  border-top-left-radius: 0;
-  background-color: #ececec;
+  border-top-left-radius: 8px;
+}
+
+.left-msg {
+  flex-direction: row;
 }
 
 .right-msg {
   flex-direction: row-reverse;
 }
 
-.msg-bubble {
-  max-width: 450px;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.msg-info {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85em;
-  color: #999;
-}
-
-.msg-text {
-  font-size: 1em;
-  color: #555;
+.right-msg .msg-bubble {
+  background: var(--right-msg-bg);
+  color: #000000;
+  font-size: smaller;
 }
 
 .msger-inputarea {
   display: flex;
-  border-top: 1px solid #ddd;
-  padding: 10px;
+  padding: 3px;
+  background: #fffff1;
+  font-size: small;
+}
+
+.msger-inputarea * {
+  padding: 5px;
+  font-size: 9.5px;
+  border-radius: 40px;
 }
 
 .msger-input {
-  flex: 1;
-  border: 0;
-  padding: 10px;
-  font-size: 1em;
+  flex: 2;
+  background: #000000;
+  color: #fffff0;
 }
 
 .msger-send-btn {
-  border: none;
-  background-color: #4caf50;
+  margin-left: 2px;
+  background: #56595b;
   color: #fff;
+  font-weight: bold;
   cursor: pointer;
-  padding: 10px;
-  font-size: 1em;
+  transition: background 0.25s;
+  border-radius: 40px;
+}
+
+.msger-send-btn:hover {
+  background: #2e2e2f;
 }
