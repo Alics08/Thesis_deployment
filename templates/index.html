@@ -2,73 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>ChatALiCS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
-    <link rel="shortcut icon" href="https://example.com/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <title>ChatALiCS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <link rel="shortcut icon" href="https://example.com/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div>
-        <div class="menu-bar">
-            <button class="hamburger" onclick="toggleDisclaimer()">☰</button>
-            <h2 class="Disclaimer">Disclaimer:</h2>
-            <p class="disclaimer-text" style="display: none;">"ALiCS provides general legal advice limited to the Revised Penal Code (RPC). It is not a substitute for expert assistance. Consult a qualified lawyer for personalized guidance. Use does not create attorney-client relationships, and reliance on information is at the user's own risk."</p>
-        </div>
+  <div>
+    <div class="menu-bar">
+      <h2 class="Disclaimer">Disclaimer:</h2>
+      <p>"ALiCS provides general legal advice limited to the Revised Penal Code (RPC). It is not a substitute for expert assistance. Consult a qualified lawyer for personalized guidance. Use does not create attorney-client relationships, and reliance on information is at the user's own risk."</p>
     </div>
+  </div>
 
-    <section class="msger">
-        <header class="msger-header">
-            <div class="msger-header-title">
-                <h1>
-                    <img class="img_1" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/440598682_2642186139286452_4277623526205992670_n.jpg?stp=dst-jpg_s206x206&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGrbSPxdfiksslsYndFhdPsK0x6JgC2SV8rTHomALZJX2zUiPmxIQ1c6yHx_4mOd0AYtwN5gezwz2J_AERkOtH4&_nc_ohc=8pMJSunxVE8Q7kNvgG6uejy&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=Ae9Ka2dA1lJgBTSIxBwmFwm&oh=03_Q7cD1QGYifzIUc4zopsZxRdQVDz9aXxkuBps9o_1Q8RL66uefw&oe=67305675" alt="img">A.L.i.C.S.
-                </h1>
-            </div>
-        </header>
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        <h1>
+          <img class="img_1" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/440598682_2642186139286452_4277623526205992670_n.jpg?stp=dst-jpg_s206x206&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGrbSPxdfiksslsYndFhdPsK0x6JgC2SV8rTHomALZJX2zUiPmxIQ1c6yHx_4mOd0AYtwN5gezwz2J_AERkOtH4&_nc_ohc=8pMJSunxVE8Q7kNvgH6uejy&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=Ae9Ka2dA1lJgBTSIxBwmFwm&oh=03_Q7cD1QGYifzIUc4zopsZxRdQVDz9aXxkuBps9o_1Q8RL66uefw&oe=67305675" alt="img">A.L.i.C.S.
+        </h1>
+      </div>
+    </header>
 
-        <main class="msger-chat">
-            <div class="msg left-msg">
-                <div class="msg-img" style="background-image: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440102351_1566729290843198_6313492771902305599_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbdQ2ARE1-a6onSFNNjOZiF_ifW4g9YzgX-J9biD1jOMZ902Zyqmhsp1DYgnP1O2vyB4BUnrUpVbSwL9HsTBkb&_nc_ohc=_TQF2kZFO9oQ7kNvgGldJjS&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AQFCbvZIXO5tVBQgt4Bq44D&oh=03_Q7cD1QF0lp1pFVm-p3M2_FknuV6fAyeXpuZEec3gCSFvO7wKZA&oe=67304368)"></div>
-                <div class="msg-bubble">
-                    <div class="msg-info">
-                        <div class="msg-info-name">Chatbot</div>
-                        <div class="msg-info-time"></div>
-                    </div>
-                    <div class="msg-text">Hi! I am ALiCS, your legal Chatbot assistant! Feel free to ask.</div>
-                </div>
-            </div>
-        </main>
+    <main class="msger-chat">
+      <div class="msg left-msg">
+        <div class="msg-img" style="background-image: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440102351_1566729290843198_6313492771902305599_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbdQ2ARE1-a6onSFNNjOZiF_ifW4g9YzgX-J9biD1jOMZ902Zyqmhsp1DYgnP1O2vyB4BUnrUpVbSwL9HsTBkb&_nc_ohc=_TQF2kZFO9oQ7kNvgGldJjS&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AQFCbvZIXO5tVBQgt4Bq44D&oh=03_Q7cD1QF0lp1pFVm-p3M2_FknuV6fAyeXpuZEec3gCSFvO7wKZA&oe=67304368)"></div>
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Chatbot</div>
+            <div class="msg-info-time"></div>
+          </div>
+          <div class="msg-text">Hi! I am ALiCS, your legal Chatbot assistant! Feel free to ask.</div>
+        </div>
+      </div>
+    </main>
 
-        <form class="msger-inputarea">
-            <input type="text" class="msger-input" id="textInput" placeholder="Enter your complaints....">
-            <button type="submit" class="msger-send-btn">Send</button>
-        </form>
-    </section>
+    <form class="msger-inputarea">
+      <input type="text" class="msger-input" id="textInput" placeholder="Enter your complaints....">
+      <button type="submit" class="msger-send-btn">Send</button>
+    </form>
+  </section>
 
-    <script>
-        const msgerForm = document.querySelector(".msger-inputarea");
-        const msgerInput = document.querySelector(".msger-input");
-        const msgerChat = document.querySelector(".msger-chat");
+  <script>
+    const msgerForm = document.querySelector(".msger-inputarea");
+    const msgerInput = document.querySelector(".msger-input");
+    const msgerChat = document.querySelector(".msger-chat");
 
-        const BOT_IMG = "https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440102351_1566729290843198_6313492771902305599_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbdQ2ARE1-a6onSFNNjOZiF_ifW4g9YzgX-J9biD1jOMZ902Zyqmhsp1DYgnP1O2vyB4BUnrUpVbSwL9HsTBkb&_nc_ohc=_TQF2kZFO9oQ7kNvgGldJjS&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AQFCbvZIXO5tVBQgt4Bq44D&oh=03_Q7cD1QF0lp1pFVm-p3M2_FknuV6fAyeXpuZEec3gCSFvO7wKZA&oe=67304368";
-        const PERSON_IMG = "https://th.bing.com/th/id/OIP.S5yvyPY2sRDqgIHMtCx0DwHaHa?rs=1&pid=ImgDetMain";
-        const BOT_NAME = "ALiCS";
-        const PERSON_NAME = "You";
+    const BOT_IMG = "https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440102351_1566729290843198_6313492771902305599_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbdQ2ARE1-a6onSFNNjOZiF_ifW4g9YzgX-J9biD1jOMZ902Zyqmhsp1DYgnP1O2vyB4BUnrUpVbSwL9HsTBkb&_nc_ohc=_TQF2kZFO9oQ7kNvgGldJjS&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AQFCbvZIXO5tVBQgt4Bq44D&oh=03_Q7cD1QF0lp1pFVm-p3M2_FknuV6fAyeXpuZEec3gCSFvO7wKZA&oe=67304368";
+    const PERSON_IMG = "https://th.bing.com/th/id/OIP.S5yvyPY2sRDqgIHMtCx0DwHaHa?rs=1&pid=ImgDetMain";
+    const BOT_NAME = "ALiCS";
+    const PERSON_NAME = "You";
 
-        msgerForm.addEventListener("submit", event => {
-            event.preventDefault();  // Prevents the default form submission
-            const msgText = msgerInput.value.trim(); // Trim whitespace
-            if (!msgText) return; // Do nothing if input is empty
+    msgerForm.addEventListener("submit", event => {
+      event.preventDefault();  // Prevents the default form submission
+      const msgText = msgerInput.value.trim(); // Trim whitespace
+      if (!msgText) return; // Do nothing if input is empty
 
-            appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
-            msgerInput.value = ""; // Clear input field
-            botResponse(msgText); // Get bot response
-        });
+      appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+      msgerInput.value = ""; // Clear input field
+      botResponse(msgText); // Get bot response
+    });
 
-        function appendMessage(name, img, side, text) {
-            const msgHTML = `
+    function appendMessage(name, img, side, text) {
+      const msgHTML = `
         <div class="msg ${side}-msg">
           <div class="msg-img" style="background-image: url(${img})"></div>
           <div class="msg-bubble">
@@ -79,40 +78,30 @@
             <div class="msg-text">${text}</div>
           </div>
         </div>`;
+      
+      msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+      msgerChat.scrollTop = msgerChat.scrollHeight; // Scroll to the bottom
+    }
 
-            msgerChat.insertAdjacentHTML("beforeend", msgHTML);
-            msgerChat.scrollTop = msgerChat.scrollHeight; // Scroll to the bottom
-        }
+    function botResponse(rawText) {
+      $.get("/get", { msg: rawText })
+        .done(function (data) {
+          console.log("User Input: ", rawText);
+          console.log("Bot Response: ", data);
+          const msgText = data; // Ensure the response is correctly received
+          appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+          console.error("Error: " + textStatus, errorThrown);
+          appendMessage(BOT_NAME, BOT_IMG, "left", "Sorry, I could not connect to the server. Please try again later.");
+        });
+    }
 
-        function botResponse(rawText) {
-            $.get("/get", { msg: rawText })
-                .done(function (data) {
-                    console.log("User Input: ", rawText);
-                    console.log("Bot Response: ", data);
-                    const msgText = data; // Ensure the response is correctly received
-                    appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
-                })
-                .fail(function (jqXHR, textStatus, errorThrown) {
-                    console.error("Error: " + textStatus, errorThrown);
-                    appendMessage(BOT_NAME, BOT_IMG, "left", "Sorry, I could not connect to the server. Please try again later.");
-                });
-        }
-
-        function formatDate(date) {
-            const h = "0" + date.getHours();
-            const m = "0" + date.getMinutes();
-            return `${h.slice(-2)}:${m.slice(-2)}`;
-        }
-
-        function toggleDisclaimer() {
-            const disclaimerText = document.querySelector('.disclaimer-text');
-            if (disclaimerText.style.display === 'none') {
-                disclaimerText.style.display = 'block';
-            } else {
-                disclaimerText.style.display = 'none';
-            }
-        }
-    </script>
+    function formatDate(date) {
+      const h = "0" + date.getHours();
+      const m = "0" + date.getMinutes();
+      return `${h.slice(-2)}:${m.slice(-2)}`;
+    }
+  </script>
 </body>
-
 </html>
