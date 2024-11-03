@@ -1,243 +1,117 @@
-:root {
-  --body-bg:  #36383f;
-  --msger-bg: #ffffff;
-  --border: 2px solid #f7fbf8;
-  --left-msg-bg:rgba(255, 255, 255, 0.9);
-  --right-msg-bg: rgb(0, 145, 255);
-}
-
-html {
-  box-sizing:border-box;
-  max-width: 100%;
-}
-
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing:content-box;
-}
-
 body {
   display: flex;
-  justify-content:right;
+  justify-content: center;
   align-items: center;
-  height: 100%;
   font-family: Helvetica, sans-serif;
-  padding-left: 25px;
-  width: 590x;
-  margin-left: auto;
-  box-sizing: content-box;
-  margin-left: 1px;
   background-color: #36383f;
-  max-width: 100%;
+  margin: 0;
+  height: 100vh;
 }
-.menu-bar{
- width: 115px;
- height: 270.5px;
- font-size: 7px;
- padding-right: 3px;
- padding-left: 4px;
- margin-right: 0px;
- margin-left: 16px;
- padding-top: 11.5px;
- text-align: justify;
- background-color:rgba(28, 23, 23, 0.4);
- border-radius: 0;
- inset-block: 40px;
- border: 0px solid blue;
- color: #fffff0;
- font-family: Arial, Helvetica, sans-serif;
-}
-.Disclaimer{
-  font-style:normal;
-  font-family: Circular, Arial, sans-serif;;
-  font-size:large;
-}
-.msger {
-  display:flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  max-width: 100%;
-  margin: 6 0px 10px;
-  height:  280px;
-  border: var(--border);
-  border-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background: var(--msger-bg);
-  box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(9, 9, 9, 0.5 );
-  margin-left: 0px;
-  margin-right: 35px;
-  width:565px;
-}
-h1{
-  font-size: 26px;
-  text-align: center;
-  font-family:Times, Times New Roman, serif;
-  font-weight: bolder;
-  color: rgb(255, 207, 0);
-  border-color: 1px solid rgba(255, 207, 0, 1);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;  
-}
-.msger-header {
-  font-size:medium;
-  justify-content: space-between;
-  padding:0px;
-  text-align: center;
-  background: #67686C;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
- -webkit-backdrop-filter: blur(20px);
-  font-weight: bold;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  padding-right: 0px;
-  margin-right: 0px;
-  padding-top: 0%;
-}
-.img_1{
-  width: 22px;
-  mix-blend-mode:normal;
- padding-right: 0px;
- padding-bottom: 0px;
- padding-left: 0px;
- padding-top: 11px;
 
+.menu-bar {
+  width: 100%;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #333;
 }
+
+.hamburger-menu {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+.disclaimer-text.hide {
+  display: none;
+}
+
+.msger {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  height: 400px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.msger-header {
+  background: #67686c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.msger-header-title {
+  font-size: 1.2rem;
+}
+
 .msger-chat {
   flex: 1;
-  overflow-y:scroll;
-  padding: 2px;
-}
-.msger-chat::-webkit-scrollbar {
-  width: 2px;
-}
-.msger-chat::-webkit-scrollbar-track {
-  background: #ddd;
-}
-.msger-chat::-webkit-scrollbar-thumb {
-  background: #bdbdbd;
-}
-.msg {
-  display:flex;
-  align-items: flex-end;
-  margin-bottom: 12px;
+  padding: 10px;
+  overflow-y: auto;
 }
 
-.msg-img {
-  width: 22px;
-  height: 22px;
-  margin-right: 2px;
-  background: #0037b8;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 100%;
-  border-color: #ddd;
-  margin-left: 2.5px;
-}
-.msg-bubble {
-  max-width: 278px;
-  padding: 3px;
-  border-radius: 10px;
-  background: var(--left-msg-bg);
-  margin-right: 3px;
-  margin-left: 3px;
-  font-family: monospace;
-  font-size: 10px;
-}
-.msg-info {
+.msg {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3px;
-}
-.msg-info-name {
-  margin-right: 10px;
-  font-weight: bold;
-  font-size: medium;
-}
-.msg-info-time {
-  font-size: 0.80em;
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
 
 .left-msg .msg-bubble {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0;
+  background-color: #ececec;
+}
 
-}
-.left-msg{
-flex-direction:row;
-}
 .right-msg {
-  flex-direction:row-reverse;
+  flex-direction: row-reverse;
 }
-.right-msg .msg-bubble {
-  background: var(--right-msg-bg);
-  color: #000000;
-  border-bottom-left-radius: 8px;
-  border-top-right-radius: 0px;
-  font-size: smaller;
+
+.msg-bubble {
+  max-width: 450px;
+  padding: 15px;
+  border-radius: 8px;
 }
-.right-msg .msg-img {
-  margin: 2px  2px 3px 3px;
+
+.msg-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  color: #999;
+}
+
+.msg-text {
+  font-size: 1em;
+  color: #555;
 }
 
 .msger-inputarea {
   display: flex;
-  padding: 3px;
-  border-top: var(--border);
-  background: #fffff1;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  font-size:small;
-  border-radius: 0px;
-}
-.msger-inputarea * {
-  padding: 5px;
-  border: none;
-  font-size: 9.5px;
-  border-color: #f7f2f2;
-  border: none;
-  border-radius: 40px;
-}
-.msger-input {
-  flex: 2;
-  background: #000000;
-  border: none;
-  color: #fffff0;
-}
-.msger-send-btn {
-  margin-left: 2px;
-  background: #56595b;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.25s;
-  border-radius: 40px;
-}
-.msger-send-btn:hover {
-  background: #2e2e2f;
+  border-top: 1px solid #ddd;
+  padding: 10px;
 }
 
-.msger-chat {
-  background-color:#36383f;
-  background-image: url("https://middlebrooksshapiro.com/wp-content/uploads/2021/03/bigstock-Business-Technology-Internet-399441008.jpg");
-  background-size:408px;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: brightness(65%);
+.msger-input {
+  flex: 1;
+  border: 0;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.msger-send-btn {
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1em;
 }
