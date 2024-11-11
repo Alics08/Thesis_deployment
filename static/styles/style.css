@@ -177,7 +177,7 @@ h1{
 .left-msg .msg-bubble {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 0px;
-
+  background-color:#ffffff;
 }
 .left-msg{
 flex-direction:row;
@@ -200,7 +200,7 @@ flex-direction:row;
   display: flex;
   padding: 3px;
   border-top: var(--border);
-  background: #fffff1;
+  background: #ffffff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   font-size:small;

@@ -8,28 +8,106 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
   <link rel="shortcut icon" href="https://example.com/favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+    /* Sidebar Transition Effect */
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: -100%; /* Start off-screen */
+      width: 150px; /* Reduced size */
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      transition: left 0.5s ease; /* Smooth transition */
+      z-index: 10; /* Higher z-index to overlap msger section */
+    }
+
+    .menu-bar.active {
+      left: 0; /* Slide in to show the menu */
+    }
+
+    /* Smaller Hamburger Menu Icon in Header */
+    .hamburger {
+      font-size: 18px;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+
+    /* Hamburger Button in Menu-Bar (Adjusted) */
+    .hamburger-menu-bar {
+      font-size: 16px; /* Reduced size */
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 5px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px; /* Adjusted position */
+      left: 10px; /* Adjusted position */
+      z-index: 11;
+    }
+
+    .msger-header-title {
+      display: flex;
+      justify-content: center; /* Center the title */
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Header Styling */
+    .msger-header {
+      position: relative;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Centered Title in Header */
+    .msger-header h1 {
+      margin: 0;
+    }
+
+    /* Styling for Disclaimer */
+    .Disclaimer {
+      margin-top: 20px;
+    }
+
+    .msger-header {
+      position: relative;
+    }
+  </style>
 </head>
 
 <body>
-  <div>
-    <div class="menu-bar">
-      <h2 class="Disclaimer">Disclaimer:</h2>
-      <p>"ALiCS provides general legal information and only limited to the Revised Penal Code (RPC). It is not a substitute for expert assistance. Consult a qualified lawyer for personalized guidance. Use does not create attorney-client relationships, and reliance on information is at the user's own risk."</p>
-    </div>
+  <div class="menu-bar">
+    <button class="hamburger-menu-bar" onclick="toggleSidebar()">☰</button> <!-- Hamburger button in menu-bar -->
+    <h2 class="Disclaimer">Disclaimer:</h2>
+    <p>"ALiCS provides general legal information and only limited to the Revised Penal Code (RPC). It is not a substitute for expert assistance. Consult a qualified lawyer for personalized guidance. Use does not create attorney-client relationships, and reliance on information is at the user's own risk."</p>
   </div>
 
   <section class="msger">
     <header class="msger-header">
-      <div class="msger-header-title">  
+      <div class="msger-header-title">
         <h1>
-          <img class="img_1" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/440598682_2642186139286452_4277623526205992670_n.jpg?stp=dst-jpg_s206x206&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGrbSPxdfiksslsYndFhdPsK0x6JgC2SV8rTHomALZJX2zUiPmxIQ1c6yHx_4mOd0AYtwN5gezwz2J_AERkOtH4&_nc_ohc=8pMJSunxVE8Q7kNvgH6uejy&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=Ae9Ka2dA1lJgBTSIxBwmFwm&oh=03_Q7cD1QGYifzIUc4zopsZxRdQVDz9aXxkuBps9o_1Q8RL66uefw&oe=67305675" alt="img">A.L.i.C.S.
+          <img class="img_1" src="https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/440598682_2642186139286452_4277623526205992670_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGrbSPxdfiksslsYndFhdPsK0x6JgC2SV8rTHomALZJX2zUiPmxIQ1c6yHx_4mOd0AYtwN5gezwz2J_AERkOtH4&_nc_ohc=1bBXZK4mRDwQ7kNvgFOXy7r&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&oh=03_Q7cD1QFvFDQDAIAf69hK-eQQ_7mismvOF5b4oGyggfd3e5uSSA&oe=675934F5" alt="img"> A.L.i.C.S.
         </h1>
       </div>
+      <button class="hamburger" onclick="toggleSidebar()">☰</button> <!-- Hamburger button in header -->
     </header>
 
     <main class="msger-chat">
       <div class="msg left-msg">
-        <div class="msg-img" style="background-image: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440102351_1566729290843198_6313492771902305599_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbdQ2ARE1-a6onSFNNjOZiF_ifW4g9YzgX-J9biD1jOMZ902Zyqmhsp1DYgnP1O2vyB4BUnrUpVbSwL9HsTBkb&_nc_ohc=_TQF2kZFO9oQ7kNvgGldJjS&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AQFCbvZIXO5tVBQgt4Bq44D&oh=03_Q7cD1QF0lp1pFVm-p3M2_FknuV6fAyeXpuZEec3gCSFvO7wKZA&oe=67304368)"></div>
+        <div class="msg-img" style="background-image: url(https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440102351_1566729290843198_6313492771902305599_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbdQ2ARE1-a6onSFNNjOZiF_ifW4g9YzgX-J9biD1jOMZ902Zyqmhsp1DYgnP1O2vyB4BUnrUpVbSwL9HsTBkb&_nc_ohc=T1aTbY3PhEUQ7kNvgEpDK8h&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QHAH4jHMkR1wm2Kn37-M5GdnVqayRaL_y7-2mCOTRQ0iA&oe=675921E8)"></div>
         <div class="msg-bubble">
           <div class="msg-info">
             <div class="msg-info-name">Chatbot</div>
@@ -47,11 +125,16 @@
   </section>
 
   <script>
+    function toggleSidebar() {
+      const menu = document.querySelector('.menu-bar');
+      menu.classList.toggle('active');
+    }
+
     const msgerForm = document.querySelector(".msger-inputarea");
     const msgerInput = document.querySelector(".msger-input");
     const msgerChat = document.querySelector(".msger-chat");
 
-    const BOT_IMG = "https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440102351_1566729290843198_6313492771902305599_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbdQ2ARE1-a6onSFNNjOZiF_ifW4g9YzgX-J9biD1jOMZ902Zyqmhsp1DYgnP1O2vyB4BUnrUpVbSwL9HsTBkb&_nc_ohc=_TQF2kZFO9oQ7kNvgGldJjS&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=AQFCbvZIXO5tVBQgt4Bq44D&oh=03_Q7cD1QF0lp1pFVm-p3M2_FknuV6fAyeXpuZEec3gCSFvO7wKZA&oe=67304368";
+    const BOT_IMG = "https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/440102351_1566729290843198_6313492771902305599_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFbdQ2ARE1-a6onSFNNjOZiF_ifW4g9YzgX-J9biD1jOMZ902Zyqmhsp1DYgnP1O2vyB4BUnrUpVbSwL9HsTBkb&_nc_ohc=T1aTbY3PhEUQ7kNvgEpDK8h&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QHAH4jHMkR1wm2Kn37-M5GdnVqayRaL_y7-2mCOTRQ0iA&oe=675921E8";
     const PERSON_IMG = "https://th.bing.com/th/id/OIP.S5yvyPY2sRDqgIHMtCx0DwHaHa?rs=1&pid=ImgDetMain";
     const BOT_NAME = "ALiCS";
     const PERSON_NAME = "You";
@@ -77,12 +160,13 @@
             </div>
             <div class="msg-text">${text}</div>
           </div>
-        </div>`;
-      
+        </div>
+      `;
       msgerChat.insertAdjacentHTML("beforeend", msgHTML);
-      msgerChat.scrollTop = msgerChat.scrollHeight; // Scroll to the bottom
+      msgerChat.scrollTop = msgerChat.scrollHeight; // Scroll to the latest message
     }
 
+    
     function botResponse(rawText) {
       $.get("/get", { msg: rawText })
         .done(function (data) {
@@ -97,11 +181,13 @@
         });
     }
 
+
     function formatDate(date) {
-      const h = "0" + date.getHours();
-      const m = "0" + date.getMinutes();
-      return `${h.slice(-2)}:${m.slice(-2)}`;
+      const hours = date.getHours().toString().padStart(2, '0');
+      const minutes = date.getMinutes().toString().padStart(2, '0');
+      return `${hours}:${minutes}`;
     }
   </script>
 </body>
+
 </html>
