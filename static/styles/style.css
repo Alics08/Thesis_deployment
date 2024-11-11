@@ -1,5 +1,5 @@
 :root {
-  --body-bg:  #36383f;
+  --body-bg:  #03124b;
   --msger-bg: #ffffff;
   --border: 2px solid #f7fbf8;
   --left-msg-bg:rgba(255, 255, 255, 0.9);
@@ -12,7 +12,7 @@ html {
 }
 
 *,
-*:before,
+*:before,x  
 *:after {
   margin: 0;
   padding: 0;
@@ -234,10 +234,87 @@ flex-direction:row;
 }
 
 .msger-chat {
-  background-color:#36383f;
+  background-color:#000d3d;
   background-image: url("https://middlebrooksshapiro.com/wp-content/uploads/2021/03/bigstock-Business-Technology-Internet-399441008.jpg");
   background-size:408px;
   background-repeat: no-repeat;
   background-position: center;
   filter: brightness(65%);
 }
+
+  /* Sidebar Transition Effect */
+  .menu-bar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen */
+    width: 150px; /* Reduced size */
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.5s ease; /* Smooth transition */
+    z-index: 10; /* Higher z-index to overlap msger section */
+  }
+
+  .menu-bar.active {
+    left: 0; /* Slide in to show the menu */
+  }
+
+  /* Smaller Hamburger Menu Icon in Header */
+  .hamburger {
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  /* Hamburger Button in Menu-Bar (Adjusted) */
+  .hamburger-menu-bar {
+    font-size: 16px; /* Reduced size */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Adjusted position */
+    left: 10px; /* Adjusted position */
+    z-index: 11;
+  }
+
+  .msger-header-title {
+    display: flex;
+    justify-content: center; /* Center the title */
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Header Styling */
+  .msger-header {
+    position: relative;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+
+  /* Centered Title in Header */
+  .msger-header h1 {
+    margin: 0;
+  }
+
+  /* Styling for Disclaimer */
+  .Disclaimer {
+    margin-top: 20px;
+  }
+
+  .msger-header {
+    position: relative;
+  }
