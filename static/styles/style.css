@@ -3,7 +3,7 @@
   --msger-bg: #ffffff;
   --border: 2px solid #f7fbf8;
   --left-msg-bg:rgba(255, 255, 255, 0.9);
-  --right-msg-bg: rgb(0, 145, 255);
+  --right-msg-bg: rgb(255, 255, 255);
 }
 
 html {
@@ -234,12 +234,11 @@ flex-direction:row;
 }
 
 .msger-chat {
-  background-color:#000d3d;
-  background-image: url("https://middlebrooksshapiro.com/wp-content/uploads/2021/03/bigstock-Business-Technology-Internet-399441008.jpg");
+  background-color:#ffffff;
   background-size:408px;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(65%);
+  filter: opacity(9);
 }
 
   /* Sidebar Transition Effect */
@@ -263,7 +262,7 @@ flex-direction:row;
 
   /* Smaller Hamburger Menu Icon in Header */
   .hamburger {
-    font-size: 15px;
+    font-size: 12px;
     background-color: #333;
     color: white;
     border: none;
@@ -277,7 +276,7 @@ flex-direction:row;
 
   /* Hamburger Button in Menu-Bar (Adjusted) */
   .hamburger-menu-bar {
-    font-size: 12px; /* Reduced size */
+    font-size: 9px; /* Reduced size */
     background-color: #333;
     color: white;
     border: none;
@@ -318,3 +317,4 @@ flex-direction:row;
   .msger-header {
     position: relative;
   }
+  
