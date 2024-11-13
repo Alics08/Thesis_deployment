@@ -3,7 +3,7 @@
   --msger-bg: #ffffff;
   --border: 2px solid #f7fbf8;
   --left-msg-bg:rgba(255, 255, 255, 0.9);
-  --right-msg-bg: rgb(255, 255, 255);
+  --right-msg-bg: rgb(0, 137, 205);
 }
 
 html {
@@ -177,7 +177,8 @@ h1{
 .left-msg .msg-bubble {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 0px;
-  background-color:#ffffff;
+  background-color:#1d1b1b;
+  color: #f7f2f2;
 }
 .left-msg{
 flex-direction:row;
@@ -262,9 +263,9 @@ flex-direction:row;
 
   /* Smaller Hamburger Menu Icon in Header */
   .hamburger {
-    font-size: 12px;
+    font-size: 8px;
     background-color: #333;
-    color: white;
+    color: rgb(255, 0, 0);
     border: none;
     padding: 0px 8px;
     border-radius: 4px;
@@ -273,7 +274,6 @@ flex-direction:row;
     top: 15px;
     left: 15px;
   }
-
   /* Hamburger Button in Menu-Bar (Adjusted) */
   .hamburger-menu-bar {
     font-size: 9px; /* Reduced size */
@@ -318,3 +318,47 @@ flex-direction:row;
     position: relative;
   }
   
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-content {
+    background-color: #333; /* Matching color of menu-bar */
+    color: #fff; /* Matching text color */
+    padding: 8px;
+    width: 85%; /* Adjusted width */
+    max-width: 200px; /* Reduced max width for smaller content */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgb(141, 132, 132);
+    border-radius: 4px;
+    font-size: 8px;
+  }
+
+  .modal-content h2 {
+    margin-top: 0;
+  }
+
+  .modal-content p {
+    margin: 10px 0;
+    text-align: justify; /* Justified text */
+  }
+
+  .close-btn {
+    background-color: rgb(255, 207, 0);
+    color: rgb(16, 14, 14);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 7px;
+    border-radius: 3px;
+  }
+
+  .close-btn:hover {
+    background-color: #ffee54;
+  }

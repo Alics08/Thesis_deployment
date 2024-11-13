@@ -10,7 +10,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="openModal()">
+
+  <!-- Disclaimer Modal -->
+  <div id="disclaimerModal" class="modal">
+    <div class="modal-content">
+      <h2>Disclaimer</h2>
+      <p>"ALiCS provides general legal information and only limited to the Revised Penal Code (RPC). It is not a substitute for expert assistance. Consult a qualified lawyer for personalized guidance. Use does not create attorney-client relationships, and reliance on information is at the user's own risk."</p>
+      <button class="close-btn" onclick="closeModal()">Chat ALiCS now!</button>
+    </div>
+  </div>
+
   <div class="menu-bar">
     <button class="hamburger-menu-bar" onclick="toggleSidebar()">❌</button> <!-- Hamburger button in menu-bar -->
     <h2 class="Disclaimer">Disclaimer:</h2>
@@ -24,7 +34,7 @@
           <img class="img_1" src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.15752-9/462578410_1080157296988126_5344151614195210496_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHTi6D7BKrU3mJKxCcT8AuzZXo6iqPOKT1lejqKo84pPbx9PdEoFsgH2DnoJ4ytUbOBR6g6h8NEoEmn5gS5WmYv&_nc_ohc=iwuKJOLb7kEQ7kNvgHLYUsD&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&oh=03_Q7cD1QHCssoMUAyL2pMkYaTNZZ3otAKA7I3OGHoZEvkplEH3XA&oe=67597489" alt="img"> A.L.i.C.S.
         </h1>
       </div>
-      <button class="hamburger" onclick="toggleSidebar()">⚠️</button> <!-- Hamburger button in header -->
+      <button class="hamburger" onclick="toggleSidebar()">⚠️ <br><p class="dis">Disclaimer</p></button> <!-- Hamburger button in header -->
     </header>
 
     <main class="msger-chat">
@@ -41,12 +51,22 @@
     </main>
 
     <form class="msger-inputarea">
-      <input type="text" class="msger-input" id="textInput" placeholder="Enter your complaints....">
-      <button type="submit" class="msger-send-btn">Send</button>
+      <input type="text" class="msger-input" id="textInput" placeholder="Enter your complaints...." disabled>
+      <button type="submit" class="msger-send-btn" disabled>Send</button>
     </form>
   </section>
 
   <script>
+    function openModal() {
+      document.getElementById("disclaimerModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("disclaimerModal").style.display = "none";
+      document.getElementById("textInput").disabled = false;  // Enable text input
+      document.querySelector(".msger-send-btn").disabled = false; // Enable send button
+    }
+
     function toggleSidebar() {
       const menu = document.querySelector('.menu-bar');
       menu.classList.toggle('active');
@@ -62,13 +82,13 @@
     const PERSON_NAME = "You";
 
     msgerForm.addEventListener("submit", event => {
-      event.preventDefault();  // Prevents the default form submission
-      const msgText = msgerInput.value.trim(); // Trim whitespace
-      if (!msgText) return; // Do nothing if input is empty
+      event.preventDefault();
+      const msgText = msgerInput.value.trim();
+      if (!msgText) return;
 
       appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
-      msgerInput.value = ""; // Clear input field
-      botResponse(msgText); // Get bot response
+      msgerInput.value = "";
+      botResponse(msgText);
     });
 
     function appendMessage(name, img, side, text) {
@@ -85,29 +105,20 @@
         </div>
       `;
       msgerChat.insertAdjacentHTML("beforeend", msgHTML);
-      msgerChat.scrollTop = msgerChat.scrollHeight; // Scroll to the latest message
+      msgerChat.scrollTop = msgerChat.scrollHeight;
     }
 
-    
     function botResponse(rawText) {
-      $.get("/get", { msg: rawText })
-        .done(function (data) {
-          console.log("User Input: ", rawText);
-          console.log("Bot Response: ", data);
-          const msgText = data; // Ensure the response is correctly received
-          appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
-        })
-        .fail(function (jqXHR, textStatus, errorThrown) {
-          console.error("Error: " + textStatus, errorThrown);
-          appendMessage(BOT_NAME, BOT_IMG, "left", "Sorry, I could not connect to the server. Please try again later.");
-        });
+      $.get("/get", { msg: rawText }).done(function (data) {
+        const msgText = data;
+        appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+      });
     }
-
 
     function formatDate(date) {
-      const hours = date.getHours().toString().padStart(2, '0');
-      const minutes = date.getMinutes().toString().padStart(2, '0');
-      return `${hours}:${minutes}`;
+      const h = "0" + date.getHours();
+      const m = "0" + date.getMinutes();
+      return `${h.slice(-2)}:${m.slice(-2)}`;
     }
   </script>
 </body>
