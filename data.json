@@ -45,7 +45,7 @@
     },
     {
       "tag": "homicide",
-      "patterns": [ "homicide","killed someone", "accidentally killed", "with out intention to kill", "he did mean to do it","not intention","accidentally"],
+      "patterns": [ "homicide","killed someone", "accidentally killed", "with intent","intention","accidentally", "killed"],
       "responses": ["It sounds like a homicide case. Homicide is the killing of one person by another, and it is punishable under Article 249 of the Revised Penal Code (RPC). The penalties vary depending on the circumstances, such as intent and provocation. The penalty for homicide ranges from imprisonment ranging from 6 to 12 years.",
                     "Based on the information provided, it appears to be a homicide case. Homicide, as defined in Article 249 of the Revised Penal Code (RPC), involves the unlawful killing of another person. The penalty for homicide may range from 6 to 12 years imprisonment, depending on the circumstances."]
     },
@@ -57,7 +57,7 @@
     },
     {
       "tag": "murder",
-      "patterns": ["murder", "unlawful killing", "intentional killing","intentionally", "intentional", "not capable to protect","can't defend", "at the back", "my father brutally killed my", "brutally killed","to death","killed","days old","die immediately","immediately died","dead on the spot","attacked","attacking","attack"],
+      "patterns": ["murder", "unlawful killing", "intentional killing","intentionally", "intentional", "not capable to protect","can't defend", "at the back", "my father brutally killed", "brutally killed","to death","days old","die immediately","immediately died","dead on the spot","attacked","attacking","attack","knife","treachery", "poison","fire","knife"],
       "responses": ["Murder is the unlawful killing of another person with malice aforethought. It is considered one of the most serious criminal offenses and is punishable by law. In the Philippines, the legal basis for prosecuting murder can be found under Article 248 of the Revised Penal Code. This article defines murder and prescribes the penalties for this offense, which may include reclusion perpetua or life imprisonment.",
                     "Murder is the intentional and unlawful killing of another person, characterized by the presence of malice aforethought. It is a grave offense punishable under criminal law. In the Philippines, the legal basis for prosecuting murder is established under Article 248 of the Revised Penal Code. This article outlines the elements of murder and provides for severe penalties, such as reclusion perpetua or life imprisonment, depending on the circumstances of the crime."]
     },

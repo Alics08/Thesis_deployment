@@ -82,10 +82,10 @@ class LegalChatbotTrainer:
     # Neural Network Model Building
     def build_model(self):
         model = Sequential()
-        model.add(Dense(291, input_shape=(self.max_sequence_length,)))
+        model.add(Dense(292, input_shape=(self.max_sequence_length,)))
         model.add(Activation('relu'))
         model.add(Dropout(0.5))
-        model.add(Dense(288))
+        model.add(Dense(289))
         model.add(Activation('relu'))
         model.add(Dropout(0.4))
         model.add(Dense(len(self.classes)))
